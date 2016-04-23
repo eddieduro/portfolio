@@ -1,0 +1,1 @@
+{"version":3,"sources":["base/_header.scss"],"names":[],"mappings":"AAAA;EACC,wBAAwB;EACxB,YAAY;EACZ,cAAc,EACd","file":"bench.styles.css","sourcesContent":["#header {\n\tbackground-color: black;\n\twidth: 100%;\n\theight: 200px;\n}"],"sourceRoot":"/source/"}

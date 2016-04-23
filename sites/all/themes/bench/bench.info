@@ -1,0 +1,12 @@
+name = Bench
+description = Custom sub-theme built for my portfolio
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; Styles
+stylesheets[all][] = css/bench.reset.css
+stylesheets[all][] = css/bench.styles.css
+
+; Scripts
+scripts[] = js/{{ THEME SANITIZED }}.behaviors.js

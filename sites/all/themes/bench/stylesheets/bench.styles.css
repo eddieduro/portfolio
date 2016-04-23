@@ -1,0 +1,6 @@
+/* line 1, ../sass/base/_header.scss */
+#header {
+  background-color: black;
+  width: 100%;
+  height: 200px;
+}
