@@ -1,0 +1,14 @@
+.hamburger {
+	position: absolute;
+  top: 2rem;
+  right: 0;	
+	.hamburger-inner{
+		background-color: #fff;
+		&:before {
+			background-color: #fff;
+		}
+		&:after {
+			background-color: #fff;
+		}
+	}
+}

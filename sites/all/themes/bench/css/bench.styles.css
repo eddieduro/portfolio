@@ -32,4 +32,18 @@
   .site-slogan:hover {
     cursor: inherit; }
 
+.hamburger {
+  position: absolute;
+  top: 2rem;
+  right: 0; }
+  .hamburger .hamburger-inner {
+    background-color: #fff; }
+    .hamburger .hamburger-inner:before {
+      background-color: #fff; }
+    .hamburger .hamburger-inner:after {
+      background-color: #fff; }
+
+button:focus {
+  outline: 0; }
+
 /*# sourceMappingURL=bench.styles.css.map */

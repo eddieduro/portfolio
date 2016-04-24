@@ -36,3 +36,27 @@
 .site-slogan:hover {
   cursor: inherit;
 }
+
+/* line 1, ../sass/base/_navigation.scss */
+.hamburger {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+}
+/* line 5, ../sass/base/_navigation.scss */
+.hamburger .hamburger-inner {
+  background-color: #fff;
+}
+/* line 7, ../sass/base/_navigation.scss */
+.hamburger .hamburger-inner:before {
+  background-color: #fff;
+}
+/* line 10, ../sass/base/_navigation.scss */
+.hamburger .hamburger-inner:after {
+  background-color: #fff;
+}
+
+/* line 2, ../sass/components/_button.scss */
+button:focus {
+  outline: 0;
+}
