@@ -1,13 +1,11 @@
 (function ($) {   
   $(document).ready(function(){
   var timeline     = new TimelineMax({delay:1.0}),
-      site_name    = $('#site-name'),
-      site_slogan  = $('#site-slogan');
-
-  $('#site-name').each(function (index) {
+      site_name    = $('.site-name'),
+      site_slogan  = $('.site-slogan');
+  $('.site-name').each(function (index) {
     var characters = $.trim($(this).text());
     characters = characters.split("");
-    console.log(characters);
     $this = $(this);
     $this.empty();
 
@@ -18,7 +16,7 @@
 
   $(window).load(function(){
 
-  timeline.staggerFromTo($('#site-name').find("span"), 
+  timeline.staggerFromTo($('.site-name').find("span"), 
                         1, 
                         {autoAlpha: 0}, 
                         {autoAlpha: 1, ease: Back.easeOut}, 

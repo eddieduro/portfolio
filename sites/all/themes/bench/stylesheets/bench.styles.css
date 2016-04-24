@@ -1,5 +1,5 @@
 /* line 1, ../sass/base/_header.scss */
-#header {
+.l-header {
   background: url("https://images.unsplash.com/uploads/1413152676137eccd463c/61606b7b?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -11,28 +11,28 @@
 }
 
 /* line 13, ../sass/base/_header.scss */
-#site-name span {
+.site-name span {
   position: relative;
   font-size: 3em;
   color: #F2F5F5;
 }
 /* line 18, ../sass/base/_header.scss */
-#site-name a {
+.site-name a {
   text-decoration: none;
 }
 /* line 20, ../sass/base/_header.scss */
-#site-name a:hover {
+.site-name a:hover {
   color: #D6D9D9;
 }
 
 /* line 26, ../sass/base/_header.scss */
-#site-slogan {
+.site-slogan {
   font-size: 1.5em;
   position: relative;
   color: #F2F5F5;
   text-align: center;
 }
 /* line 31, ../sass/base/_header.scss */
-#site-slogan:hover {
+.site-slogan:hover {
   cursor: inherit;
 }
