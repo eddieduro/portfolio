@@ -7,6 +7,7 @@ core = 7.x
 ; Styles
 stylesheets[all][] = css/bench.reset.css
 stylesheets[all][] = css/bench.styles.css
+stylesheets[all][] = hamburgers/dist/hamburgers.min.css
 
 ; Scripts
 scripts[] = greensock-js/src/minified/TweenMax.min.js

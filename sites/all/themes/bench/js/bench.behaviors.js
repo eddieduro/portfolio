@@ -1,6 +1,6 @@
 (function ($) {   
   $(document).ready(function(){
-  var timeline     = new TimelineMax({delay:0.5}),
+  var timeline     = new TimelineMax({delay:1.0}),
       site_name    = $('#site-name'),
       site_slogan  = $('#site-slogan');
 
@@ -27,7 +27,7 @@
     TweenMax.fromTo(site_slogan, 
                     1, 
                     { y: -30, autoAlpha: 0, transformPerspective: 600, rotationX: -90 }, 
-                    { y: 0, autoAlpha: 1, rotationX: 0, ease: Back.easeOut })
+                    { y: 0, autoAlpha: 1, rotationX: 0, ease: Back.easeOut }, 0.1)
               );
     });
   });

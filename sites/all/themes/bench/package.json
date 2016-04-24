@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "sass:dev": "./node_modules/.bin/gulp",
-    "sass:prod": "./node_modules/.bin/gulp sass:prod"
+    "sass:prod": "./node_modules/.bin/gulp sass:prod",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
   },
   "dependencies": {},
   "devDependencies": {
