@@ -1,3 +1,5 @@
+/* Text */
+@import url(https://fonts.googleapis.com/css?family=Cambay:400,700);
 /* line 1, ../sass/base/_header.scss */
 .l-header {
   background: url("https://images.unsplash.com/uploads/1413152676137eccd463c/61606b7b?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300") center no-repeat;
@@ -12,27 +14,30 @@
 
 /* line 13, ../sass/base/_header.scss */
 .site-name span {
+  font-family: "Camby", sans-serif;
+  font-weight: 700;
   position: relative;
   font-size: 3em;
   color: #F2F5F5;
 }
-/* line 18, ../sass/base/_header.scss */
+/* line 20, ../sass/base/_header.scss */
 .site-name a {
   text-decoration: none;
 }
-/* line 20, ../sass/base/_header.scss */
+/* line 22, ../sass/base/_header.scss */
 .site-name a:hover {
   color: #D6D9D9;
 }
 
-/* line 26, ../sass/base/_header.scss */
+/* line 28, ../sass/base/_header.scss */
 .site-slogan {
+  font-family: "Camby", sans-serif;
   font-size: 1.5em;
   position: relative;
   color: #F2F5F5;
   text-align: center;
 }
-/* line 31, ../sass/base/_header.scss */
+/* line 34, ../sass/base/_header.scss */
 .site-slogan:hover {
   cursor: inherit;
 }
@@ -85,8 +90,14 @@
   list-style: none;
   text-align: left;
 }
-/* line 40, ../sass/base/_navigation.scss */
+/* line 41, ../sass/base/_navigation.scss */
+#block-system-main-menu ul.menu li {
+  padding: 1rem;
+}
+/* line 45, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu a {
+  font-family: "Camby", sans-serif;
+  font-weight: 700;
   text-decoration: none;
   color: #fff;
   font-size: 2.0em;

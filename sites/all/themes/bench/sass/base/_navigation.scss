@@ -37,7 +37,14 @@
 	  border: none;
 	  list-style: none;
 	  text-align: left;
+
+	  li {
+	  	padding: 1rem;
+	  }
+	  
 	  a {
+	  	font-family: $main_font;
+	  	font-weight: 700;
 	  	text-decoration: none;
 	  	color: #fff;
 	  	font-size: 2.0em;

@@ -3,3 +3,10 @@ $white_hover: #D6D9D9;
 
 $header_color: $white;
 $header_hover: $white_hover;  
+
+/* Text */
+
+@import url(https://fonts.googleapis.com/css?family=Cambay:400,700);
+$cambay: "Camby", sans-serif;
+
+$main_font: $cambay;

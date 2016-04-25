@@ -10,7 +10,9 @@
 }
 
 .site-name {
-	span{		
+	span{	
+		font-family: $main_font;	
+		font-weight: 700;
 		position: relative;
 		font-size: 3em;
 		color: $header_color;
@@ -24,6 +26,7 @@
 }
 
 .site-slogan {
+	font-family: $main_font;
 	font-size: 1.5em;
 	position: relative;
 	color: $header_color;

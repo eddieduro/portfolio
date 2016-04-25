@@ -1,3 +1,5 @@
+/* Text */
+@import url(https://fonts.googleapis.com/css?family=Cambay:400,700);
 .l-header {
   background: url("https://images.unsplash.com/uploads/1413152676137eccd463c/61606b7b?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300") center no-repeat;
   background-attachment: fixed;
@@ -15,6 +17,8 @@
           align-items: center; }
 
 .site-name span {
+  font-family: "Camby", sans-serif;
+  font-weight: 700;
   position: relative;
   font-size: 3em;
   color: #F2F5F5; }
@@ -25,6 +29,7 @@
     color: #D6D9D9; }
 
 .site-slogan {
+  font-family: "Camby", sans-serif;
   font-size: 1.5em;
   position: relative;
   color: #F2F5F5;
@@ -70,7 +75,11 @@
     border: none;
     list-style: none;
     text-align: left; }
+    #block-system-main-menu ul.menu li {
+      padding: 1rem; }
     #block-system-main-menu ul.menu a {
+      font-family: "Camby", sans-serif;
+      font-weight: 700;
       text-decoration: none;
       color: #fff;
       font-size: 2.0em; }
