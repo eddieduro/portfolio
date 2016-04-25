@@ -93,7 +93,11 @@
     </div>
 
     <?php print render($page['header']); ?>
-    <?php print render($page['navigation']); ?>
+    <div class="navigation">
+      <nav>
+        <ul><?php print render($page['navigation']); ?></ul>
+      </nav>
+    </div>
   </header>
 
   <div class="l-main">

@@ -40,20 +40,56 @@
 /* line 1, ../sass/base/_navigation.scss */
 .hamburger {
   position: absolute;
+  display: block;
   top: 2rem;
   right: 0;
+  z-index: 10;
 }
-/* line 5, ../sass/base/_navigation.scss */
+/* line 7, ../sass/base/_navigation.scss */
 .hamburger .hamburger-inner {
   background-color: #fff;
 }
-/* line 7, ../sass/base/_navigation.scss */
+/* line 9, ../sass/base/_navigation.scss */
 .hamburger .hamburger-inner:before {
   background-color: #fff;
 }
-/* line 10, ../sass/base/_navigation.scss */
+/* line 12, ../sass/base/_navigation.scss */
 .hamburger .hamburger-inner:after {
   background-color: #fff;
+}
+
+/* line 17, ../sass/base/_navigation.scss */
+#block-system-main-menu {
+  opacity: 0;
+}
+/* line 19, ../sass/base/_navigation.scss */
+#block-system-main-menu .content {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 31, ../sass/base/_navigation.scss */
+#block-system-main-menu ul li.leaf {
+  list-style-image: none;
+  list-style-type: none;
+}
+/* line 36, ../sass/base/_navigation.scss */
+#block-system-main-menu ul.menu {
+  border: none;
+  list-style: none;
+  text-align: left;
+}
+/* line 40, ../sass/base/_navigation.scss */
+#block-system-main-menu ul.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.0em;
 }
 
 /* line 2, ../sass/components/_button.scss */

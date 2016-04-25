@@ -1,7 +1,9 @@
 .hamburger {
 	position: absolute;
+	display: block;
   top: 2rem;
   right: 0;	
+  z-index: 10;
 	.hamburger-inner{
 		background-color: #fff;
 		&:before {
@@ -10,5 +12,35 @@
 		&:after {
 			background-color: #fff;
 		}
+	}
+}
+#block-system-main-menu{	
+    opacity: 0;
+	.content {
+		background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+
+	ul li.leaf {
+	  list-style-image: none;
+	  list-style-type: none;
+	}
+
+	ul.menu {
+	  border: none;
+	  list-style: none;
+	  text-align: left;
+	  a {
+	  	text-decoration: none;
+	  	color: #fff;
+	  	font-size: 2.0em;
+	  }
 	}
 }
