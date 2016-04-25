@@ -31,7 +31,7 @@
       timeline.to($menu,
                   0.5,
                   {autoAlpha: 1, ease: Back.easeOut}); 
-      timeline.add(
+      TweenMax.add(
         TweenMax.staggerFromTo($menu.find("li"), 
                     1, 
                     {autoAlpha: 0, x:-1000}, 
@@ -39,15 +39,9 @@
                     0.1)
       );    
     } else if(!($hamburger.hasClass('is-active'))) {
-        TweenMax.staggerTo($menu.find("li"), 
-                    0.5, 
-                    {autoAlpha: 0, x: -1000}, 
-                    0.5);
-      timeline.add(
-        timeline.to($menu,
-                    0.5,
-                    {autoAlpha: 0, ease: Back.easeOut})  
-      );    
+      timeline.to($menu,
+                  0.5,
+                  {autoAlpha: 0, ease: Back.easeOut});  
     }
   });
   $(window).load(function(){
