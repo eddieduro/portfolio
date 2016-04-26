@@ -1,4 +1,4 @@
-(function ($) {   
+(function ($) {
   $(document).ready(function(){
 
   let timeline      = new TimelineMax({delay:1.0}),
@@ -28,33 +28,36 @@
     $hamburger.toggleClass("is-active");
 
     if($hamburger.hasClass('is-active')){
+      //Black bg menu animation
       timeline.to($menu,
                   0.5,
-                  {autoAlpha: 1, ease: Back.easeOut}); 
+                  {autoAlpha: 1, ease: Back.easeOut});
       TweenMax.add(
-        TweenMax.staggerFromTo($menu.find("li"), 
-                    1, 
-                    {autoAlpha: 0, x:-1000}, 
-                    {autoAlpha: 1, ease: Back.easeOut, x:0}, 
+        //Nav link animations from left to right
+        TweenMax.staggerFromTo($menu.find("li"),
+                    1,
+                    {autoAlpha: 0, x:-1000},
+                    {autoAlpha: 1, ease: Sine.easeOut, x:0},
                     0.1)
-      );    
+      );
     } else if(!($hamburger.hasClass('is-active'))) {
+      //closing animation
       timeline.to($menu,
                   0.5,
-                  {autoAlpha: 0, ease: Back.easeOut});  
+                  {autoAlpha: 0, ease: Back.easeOut});
     }
   });
   $(window).load(function(){
 
-  timeline.staggerFromTo($site_name.find("span"), 
-                        1, 
-                        {autoAlpha: 0}, 
-                        {autoAlpha: 1, ease: Back.easeOut}, 
-                        0.1);  
+  timeline.staggerFromTo($site_name.find("span"),
+                        1,
+                        {autoAlpha: 0},
+                        {autoAlpha: 1, ease: Back.easeOut},
+                        0.1);
   timeline.add(
-    TweenMax.fromTo($site_slogan, 
-                    1, 
-                    { y: -30, autoAlpha: 0, transformPerspective: 600, rotationX: -90 }, 
+    TweenMax.fromTo($site_slogan,
+                    1,
+                    { y: -30, autoAlpha: 0, transformPerspective: 600, rotationX: -90 },
                     { y: 0, autoAlpha: 1, rotationX: 0, ease: Back.easeOut }, 0.1)
               );
     });
