@@ -77,12 +77,29 @@
     text-align: left; }
     #block-system-main-menu ul.menu li {
       padding: 1rem; }
-    #block-system-main-menu ul.menu a {
-      font-family: "Camby", sans-serif;
-      font-weight: 700;
-      text-decoration: none;
-      color: #fff;
-      font-size: 2.0em; }
+      #block-system-main-menu ul.menu li a {
+        position: relative;
+        font-family: "Camby", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.0em; }
+        #block-system-main-menu ul.menu li a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #fff;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out 0s; }
+        #block-system-main-menu ul.menu li a:hover {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
 
 button:focus {
   outline: 0; }

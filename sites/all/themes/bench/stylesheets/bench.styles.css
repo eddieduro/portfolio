@@ -94,13 +94,35 @@
 #block-system-main-menu ul.menu li {
   padding: 1rem;
 }
-/* line 45, ../sass/base/_navigation.scss */
-#block-system-main-menu ul.menu a {
+/* line 43, ../sass/base/_navigation.scss */
+#block-system-main-menu ul.menu li a {
+  position: relative;
   font-family: "Camby", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: #fff;
   font-size: 2.0em;
+}
+/* line 50, ../sass/base/_navigation.scss */
+#block-system-main-menu ul.menu li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+/* line 64, ../sass/base/_navigation.scss */
+#block-system-main-menu ul.menu li a:hover {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* line 2, ../sass/components/_button.scss */
