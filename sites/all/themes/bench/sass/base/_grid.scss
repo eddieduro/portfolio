@@ -1,0 +1,10 @@
+.view-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+  td{
+    flex: 33%;
+  }
+}

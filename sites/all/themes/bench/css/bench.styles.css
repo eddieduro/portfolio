@@ -1,20 +1,14 @@
 /* Text */
 @import url(https://fonts.googleapis.com/css?family=Cambay:400,700);
 .l-header {
-  background: url("https://images.unsplash.com/27/hailo-street.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=6393e611758a727eab3d194bfd6083c8") center no-repeat;
+  background: url("https://images.unsplash.com/photo-1432383079404-c66efb4828a3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1721166ddb88c0269bfbb82cc07d488f") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 650px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: center;
+  align-items: center; }
 
 .site-name span {
   font-family: "Camby", sans-serif;
@@ -40,7 +34,7 @@
 .hamburger {
   position: absolute;
   display: block;
-  top: 4rem;
+  top: 2rem;
   right: 0;
   z-index: 10; }
   .hamburger .hamburger-inner {
@@ -60,15 +54,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    align-items: center;
+    justify-content: center; }
   #block-system-main-menu ul li.leaf {
     list-style-image: none;
     list-style-type: none; }
@@ -92,11 +80,12 @@
           height: 6px;
           bottom: 0;
           left: 0;
-          background-color: #1CBFB1;
+          background-color: #adf5b7;
           visibility: hidden;
           opacity: 0;
           -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
+          -webkit-transition: all 0.3s ease-in-out 0s;
           transition: all 0.3s ease-in-out 0s; }
         #block-system-main-menu ul.menu li a:hover:before {
           visibility: visible;
@@ -104,7 +93,14 @@
           -webkit-transform: translateX(0px) skewX(-30deg);
           transform: translateX(0px) skewX(-30deg); }
 
+.view-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: row wrap; }
+  .view-content td {
+    flex: 33%; }
+
 button:focus {
   outline: 0; }
-
-/*# sourceMappingURL=bench.styles.css.map */
