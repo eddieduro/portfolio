@@ -1,0 +1,5 @@
+name = My Custom Menu items
+description = exercise modules to practice custom modules and data arrays.
+package = My Custom Menu Items
+core = 7.x
+files[] = my_custom_menu_items.module

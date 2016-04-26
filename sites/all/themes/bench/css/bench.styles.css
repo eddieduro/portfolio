@@ -3,7 +3,7 @@
 .l-header {
   background: url("https://images.unsplash.com/uploads/1413152676137eccd463c/61606b7b?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300") center no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   height: 650px;
   display: -webkit-flex;
@@ -40,7 +40,7 @@
 .hamburger {
   position: absolute;
   display: block;
-  top: 2rem;
+  top: 4rem;
   right: 0;
   z-index: 10; }
   .hamburger .hamburger-inner {
@@ -54,6 +54,7 @@
   opacity: 0; }
   #block-system-main-menu .content {
     background-color: black;
+    z-index: 10;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -88,18 +89,20 @@
           content: "";
           position: absolute;
           width: 100%;
-          height: 2px;
+          height: 6px;
           bottom: 0;
           left: 0;
-          background-color: #fff;
+          background-color: #1CBFB1;
           visibility: hidden;
-          -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+          opacity: 0;
+          -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
           transition: all 0.3s ease-in-out 0s; }
-        #block-system-main-menu ul.menu li a:hover {
+        #block-system-main-menu ul.menu li a:hover:before {
           visibility: visible;
-          -webkit-transform: scaleX(1);
-          transform: scaleX(1); }
+          opacity: 0.9;
+          -webkit-transform: translateX(0px) skewX(-30deg);
+          transform: translateX(0px) skewX(-30deg); }
 
 button:focus {
   outline: 0; }

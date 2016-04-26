@@ -1,7 +1,7 @@
 .l-header {
 	background: url('https://images.unsplash.com/uploads/1413152676137eccd463c/61606b7b?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300') center no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: contain;
 	width: 100%;
 	height: 650px;
 	display: flex;
@@ -10,8 +10,8 @@
 }
 
 .site-name {
-	span{	
-		font-family: $main_font;	
+	span{
+		font-family: $main_font;
 		font-weight: 700;
 		position: relative;
 		font-size: 3em;

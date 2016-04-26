@@ -1,0 +1,192 @@
+<?php
+
+$GLOBALS["favorites"] = array(
+    "movies" => array(
+        "Joe Dirt",
+        "Zoolander",
+        "Free Willy",
+    ),
+    "books" => array(
+        "less than zero",
+        "harry potter",
+        "harry potter 2",
+    ),
+    "songs" => array(
+        "song1",
+        "song2",
+        "song3",
+    ),
+);
+
+function my_custom_menu_items_menu() {
+
+    $items = array();
+    $friends = array('fred', 'ann', 'george');
+
+    foreach($friends as $friend) {
+
+        $items['cards/' . $friend] = array(
+        'title' => $friend,
+        'page callback' => 'friend_card',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+        );
+    }
+
+    foreach($GLOBALS["favorites"] as $favorite => $value) {
+
+        $items['favorite/' . $favorite] = array(
+        'title' => $favorite,
+        'page callback' => 'favorites_list',
+        'access callback' => TRUE,
+        'page arguments' => array(1),
+        'type' => MENU_NORMAL_ITEM,
+        );
+    }
+
+    $items['hello_friend'] = array(
+      'title' => "Hello Friend!",
+      'page callback' => 'say_hello',
+      'access callback' => TRUE,
+      'type' => MENU_CALLBACK,
+    );
+    $items['farewell'] = array(
+      'title' => 'Farewell Friend!',
+      'page callback' => 'say_farewell',
+      'access callback' => TRUE,
+      'type' => MENU_CALLBACK,
+    );
+
+    $items['groceries'] = array(
+    'title' => 'My grocery list',
+    'page callback' => 'grocery_list',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+    );
+
+    $items['pet'] = array(
+      'title' => 'My Favorite Pet',
+      'page callback' => 'pet_info',
+      'access callback' => TRUE,
+      'type' => MENU_NORMAL_ITEM,
+    );
+
+    $items['specials'] = array(
+      'title' => "Cameron's Daily Specials",
+      'page callback' => 'specials_display',
+      'access callback' => TRUE,
+      'type' => MENU_NORMAL_ITEM,
+    );
+
+    return $items;
+}
+
+function friend_card() {
+    return '<p>Greetings!</p>';
+}
+
+function favorites_list($args)
+{
+    $list = "";
+    // var_dump($GLOBALS["favorites"], $args);
+    if($args == "movies"){
+        foreach($GLOBALS["favorites"]["movies"] as $value){
+            $list .= "<li>" . $value . "</li>";
+        }
+        return $list;
+    } elseif($args == "books") {
+        foreach($GLOBALS["favorites"]["books"] as $value){
+            $list .= "<li>" . $value . "</li>";
+        }
+        return $list;
+    } elseif($args == "songs") {
+        foreach($GLOBALS["favorites"]["songs"] as $value){
+            $list .= "<li>" . $value . "</li>";
+        }
+        return $list;
+    }
+
+}
+
+function say_hello() {
+  return '<p>Hello my dear friend</p>';
+}
+
+function say_farewell() {
+  return '<p>Fare thee well my dear friend!</p>';
+}
+function greeting_user_login() {
+  $_GET['destination'] = 'hello_friend';
+}
+function greeting_user_logout() {
+  $_GET['destination'] = 'farewell';
+}
+
+function grocery_list()
+{
+    $my_list["eggs"] = array(
+    'price' => 5.00,
+    'quantity' => 2,
+    );
+
+    $my_list["milk"] = array(
+    'price' => 3.50,
+    'quantity' => 1,
+    );
+
+    $my_list["bread"] = array(
+    'price' => 1.99,
+    'quantity' => 4,
+    );
+
+    $groceries = $my_list;
+    $list = "";
+    $prices = [];
+    $quantities = [];
+    $sub_total_array =[];
+    $sub_total = 0;
+    $total = 0;
+
+    foreach ($groceries as $grocery => $grocery_info) {
+        $list .= "<li>" . $grocery . "</li>";
+        foreach($groceries[$grocery] as $item => $value){
+            if ($item == 'price') {
+                array_push($prices, $value);
+                $list .= "<li> Price: " . $value . "</li>";
+            } else {
+                array_push($quantities, $value);
+                $list .= "<li> Quantity: " . $value . "</li>";
+                for($i = 0; $i < count($prices); $i++){
+                $sub_total = $prices[$i] * $quantities[$i];
+                }
+            }
+        }
+        $list .= "<li>Subtotal:" . $sub_total . "</li>";
+        array_push($sub_total_array, $sub_total);
+    }
+
+    foreach ($sub_total_array as $price) {
+        $total = $total + $price;
+    }
+
+    $list .= "<li>Total Cost:" . $total . "</li>";
+    return $list;
+}
+
+function pet_info() {
+  return '
+    <h3>Lava</h3>
+    <img src="/sites/all/modules/pet/image/pet.jpg"/><br>
+    <a href="https://en.wikipedia.org/wiki/Black_cat">Learn More about Black Cats</a>
+    ';
+}
+
+function specials_display() {
+  return '
+    <ul>
+      <li>Chai Latte</li>
+      <li>Chocolate Bacon Cookies</li>
+      <li>Salted Caramel Apple Croissant</li>
+    </ul>
+    ';
+}
