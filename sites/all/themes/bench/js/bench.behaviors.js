@@ -2,7 +2,7 @@
   $(document).ready(function(){
 
     let timeline      = new TimelineMax({delay:3.0}),
-        startup       = new TimelineMax({}),
+        startup       = new TimelineMax({delay:3.0}),
         $site_name    = $('.site-name'),
         $site_slogan  = $('.site-slogan'),
         $hamburger    = $(".hamburger"),
@@ -11,16 +11,18 @@
         $body         = $("body");
         $html         = $("html")
 
-    TweenMax.set($html, {backgroundColor: "black"}); //Body set to 0 on page load.    
+    TweenMax.set($html, {backgroundColor: "black"}); //Body set to 0 on page load.
     TweenMax.set($body, {autoAlpha: 0, x: -1000}); //Body set to 0 on page load.
     TweenMax.set($site_name.find("span"), {autoAlpha: 0}); //Set site name opactiy to 0.
     TweenMax.set($site_slogan, {autoAlpha: 0}); //Set site slogan opactiy to 0.
     TweenMax.to($body,
-                2, 
-                {autoAlpha: 1, x: 0}, 0.1);
-    
+      2,
+      {autoAlpha: 1, x: 0}, 0.1);
+
   $(window).load(function(){
-    startup.set($html, {backgroundColor: "white"}); //Body set to 0 on page load.    
+    setInterval(function(){
+      startup.set($html, {backgroundColor: "white"}); //Body set to 0 on page load.
+    }, 1500);
     TweenMax.set($menu, {autoAlpha: 0}); //Menu opacity 0
     TweenMax.set($menu.find("li"), {x:-1000});
 
@@ -75,7 +77,7 @@
     $menu.find("a").on("click", function(e) {
        TweenMax.set($html, {backgroundColor: "black"});
        TweenMax.to($body,
-                1, 
+                1,
                 {autoAlpha: 0, x: 1000}, 0.1);
     });
 
