@@ -73,10 +73,17 @@
                 );
 
     $menu.find("a").on("click", function(e) {
-       TweenMax.set($html, {backgroundColor: "black"});
-       TweenMax.to($body,
-                1, 
-                {autoAlpha: 0, x: 1000}, 0.1);
+      TweenMax.set($html, {backgroundColor: "black"});
+      TweenMax.staggerFromTo($menu.find("li"),
+                    1,
+                    {autoAlpha: 1, x:0},
+                    { x:1000},
+                    0.1)
+      TweenMax.add(
+        timeline.to($body,
+                0.2, 
+                {autoAlpha: 0, x: 1000}, 0.1)
+      );
     });
 
     });
