@@ -1,3 +1,16 @@
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+	40% {
+    transform: translateX(-30px);
+  }
+	60% {
+    transform: translateX(-15px);
+  }
+}
+
+
 .hamburger {
 	position: absolute;
 	display: block;
@@ -13,6 +26,15 @@
 			background-color: #fff;
 		}
 	}
+}
+
+.fa {
+	position: absolute;
+	display: block;
+  top: 24rem;
+  right: 10px;
+  z-index: 10;
+  animation: bounce 2s infinite;
 }
 #block-system-main-menu{
     opacity: 0;

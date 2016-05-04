@@ -8,10 +8,12 @@
         $hamburger    = $(".hamburger"),
         $menu         = $("#block-system-main-menu"),
         $active       = $(".is-active"),
-        $body         = $("body");
-        $html         = $("html")
+        $body         = $("body"),
+        $html         = $("html"),
+        $arrow        = $(".fa");
 
     TweenMax.set($html, {backgroundColor: "black"}); //Body set black.
+    TweenMax.set($arrow, {autoAlpha: 0});
     TweenMax.set($body, {autoAlpha: 0, x: -1000}); //Body set to 0 on page load.
     TweenMax.set($site_name.find("span"), {autoAlpha: 0}); //Set site name opactiy to 0.
     TweenMax.set($site_slogan, {autoAlpha: 0}); //Set site slogan opactiy to 0.
@@ -61,19 +63,32 @@
                     {autoAlpha: 0, ease: Back.easeOut});
       }
     });
-
+    //eddie duro animation
     timeline.staggerFromTo($site_name.find("span"),
                           1,
                           {autoAlpha: 0},
                           {autoAlpha: 1, ease: Back.easeOut},
                           0.1);
+    //web developer animation
     timeline.add(
       TweenMax.fromTo($site_slogan,
                       1,
                       { y: -30, autoAlpha: 0, transformPerspective: 600, rotationX: -90 },
                       { y: 0, autoAlpha: 1, rotationX: 0, ease: Back.easeOut }, 0.1)
                 );
-
+    //hamburger animation
+    timeline.fromTo($hamburger,
+                          1,
+                          {y: -30, autoAlpha: 0},
+                          {y: 0, autoAlpha: 1, ease: Back.easeOut},
+                          0.1);
+    // arrow animation
+    timeline.add(
+      TweenMax.fromTo($arrow, 
+                      1,
+                      {autoAlpha: 0},
+                      {autoAlpha: 1})
+    );
     $menu.find("a").on("click", function(e) {
 
       TweenMax.set($html, {backgroundColor: "black"});

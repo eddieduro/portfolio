@@ -37,6 +37,28 @@
   .site-slogan:hover {
     cursor: inherit; }
 
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  40% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); }
+  60% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  40% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); }
+  60% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px); } }
+
 .hamburger {
   position: absolute;
   display: block;
@@ -49,6 +71,15 @@
       background-color: #fff; }
     .hamburger .hamburger-inner:after {
       background-color: #fff; }
+
+.fa {
+  position: absolute;
+  display: block;
+  top: 24rem;
+  right: 10px;
+  z-index: 10;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite; }
 
 #block-system-main-menu {
   opacity: 0; }
@@ -124,6 +155,9 @@
     -webkit-flex: 33%;
         -ms-flex: 33%;
             flex: 33%; }
+
+.container {
+  margin: 1em; }
 
 button:focus {
   outline: 0; }

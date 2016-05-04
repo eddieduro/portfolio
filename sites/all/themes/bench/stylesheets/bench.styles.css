@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Cambay:400,700);
 /* line 1, ../sass/base/_header.scss */
 .l-header {
-  background: url("https://images.unsplash.com/27/hailo-street.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=6393e611758a727eab3d194bfd6083c8") center no-repeat;
+  background: url("https://images.unsplash.com/photo-1432383079404-c66efb4828a3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1721166ddb88c0269bfbb82cc07d488f") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -42,32 +42,53 @@
   cursor: inherit;
 }
 
-/* line 1, ../sass/base/_navigation.scss */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
+/* line 14, ../sass/base/_navigation.scss */
 .hamburger {
   position: absolute;
   display: block;
-  top: 4rem;
+  top: 2rem;
   right: 0;
   z-index: 10;
 }
-/* line 7, ../sass/base/_navigation.scss */
+/* line 20, ../sass/base/_navigation.scss */
 .hamburger .hamburger-inner {
   background-color: #fff;
 }
-/* line 9, ../sass/base/_navigation.scss */
+/* line 22, ../sass/base/_navigation.scss */
 .hamburger .hamburger-inner:before {
   background-color: #fff;
 }
-/* line 12, ../sass/base/_navigation.scss */
+/* line 25, ../sass/base/_navigation.scss */
 .hamburger .hamburger-inner:after {
   background-color: #fff;
 }
 
-/* line 17, ../sass/base/_navigation.scss */
+/* line 31, ../sass/base/_navigation.scss */
+.fa {
+  position: absolute;
+  display: block;
+  top: 24rem;
+  right: 10px;
+  z-index: 10;
+  animation: bounce 2s infinite;
+}
+
+/* line 39, ../sass/base/_navigation.scss */
 #block-system-main-menu {
   opacity: 0;
 }
-/* line 19, ../sass/base/_navigation.scss */
+/* line 41, ../sass/base/_navigation.scss */
 #block-system-main-menu .content {
   background-color: black;
   z-index: 10;
@@ -80,22 +101,22 @@
   align-items: center;
   justify-content: center;
 }
-/* line 32, ../sass/base/_navigation.scss */
+/* line 54, ../sass/base/_navigation.scss */
 #block-system-main-menu ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 37, ../sass/base/_navigation.scss */
+/* line 59, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu {
   border: none;
   list-style: none;
   text-align: left;
 }
-/* line 42, ../sass/base/_navigation.scss */
+/* line 64, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li {
   padding: 1rem;
 }
-/* line 44, ../sass/base/_navigation.scss */
+/* line 66, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a {
   position: relative;
   font-family: "Camby", sans-serif;
@@ -104,7 +125,7 @@
   color: #fff;
   font-size: 2.0em;
 }
-/* line 51, ../sass/base/_navigation.scss */
+/* line 73, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:before {
   content: "";
   position: absolute;
@@ -112,7 +133,7 @@
   height: 6px;
   bottom: 0;
   left: 0;
-  background-color: #1CBFB1;
+  background-color: #adf5b7;
   visibility: hidden;
   opacity: 0;
   -webkit-transform: translateX(-30px);
@@ -120,12 +141,30 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 66, ../sass/base/_navigation.scss */
+/* line 88, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:hover:before {
   visibility: visible;
   opacity: 0.9;
   -webkit-transform: translateX(0px) skewX(-30deg);
   transform: translateX(0px) skewX(-30deg);
+}
+
+/* line 1, ../sass/base/_grid.scss */
+.view-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+/* line 7, ../sass/base/_grid.scss */
+.view-content td {
+  flex: 33%;
+}
+
+/* line 12, ../sass/base/_grid.scss */
+.container {
+  margin: 1em;
 }
 
 /* line 2, ../sass/components/_button.scss */
