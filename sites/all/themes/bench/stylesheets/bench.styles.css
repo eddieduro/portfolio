@@ -84,11 +84,20 @@
   animation: bounce 2s infinite;
 }
 
-/* line 39, ../sass/base/_navigation.scss */
+/* line 40, ../sass/base/_navigation.scss */
+.work {
+  position: absolute;
+  display: block;
+  top: 25.5rem;
+  right: 10px;
+  z-index: 10;
+}
+
+/* line 47, ../sass/base/_navigation.scss */
 #block-system-main-menu {
   opacity: 0;
 }
-/* line 41, ../sass/base/_navigation.scss */
+/* line 49, ../sass/base/_navigation.scss */
 #block-system-main-menu .content {
   background-color: black;
   z-index: 10;
@@ -101,22 +110,22 @@
   align-items: center;
   justify-content: center;
 }
-/* line 54, ../sass/base/_navigation.scss */
+/* line 62, ../sass/base/_navigation.scss */
 #block-system-main-menu ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 59, ../sass/base/_navigation.scss */
+/* line 67, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu {
   border: none;
   list-style: none;
   text-align: left;
 }
-/* line 64, ../sass/base/_navigation.scss */
+/* line 72, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li {
   padding: 1rem;
 }
-/* line 66, ../sass/base/_navigation.scss */
+/* line 74, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a {
   position: relative;
   font-family: "Camby", sans-serif;
@@ -125,7 +134,7 @@
   color: #fff;
   font-size: 2.0em;
 }
-/* line 73, ../sass/base/_navigation.scss */
+/* line 81, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:before {
   content: "";
   position: absolute;
@@ -141,7 +150,7 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 88, ../sass/base/_navigation.scss */
+/* line 96, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:hover:before {
   visibility: visible;
   opacity: 0.9;

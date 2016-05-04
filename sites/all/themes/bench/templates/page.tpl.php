@@ -102,7 +102,10 @@
 
   <div class="l-main">
     <div class="l-content" role="main">
-    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    <?php if ($is_front): ?>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      <a href="/work" class="work">Work</a>
+    <?php endif; ?>
     <button class="hamburger hamburger--collapse" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
