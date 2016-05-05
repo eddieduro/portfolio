@@ -1,8 +1,8 @@
 (function ($) {
   $(document).ready(function(){
 
-    let timeline      = new TimelineMax({delay:3.0}),
-        startup       = new TimelineMax({delay:3.0}),
+    let timeline      = new TimelineMax({delay:1.0}),
+        startup       = new TimelineMax({delay:1.0}),
         $site_name    = $('.site-name'),
         $site_slogan  = $('.site-slogan'),
         $hamburger    = $(".hamburger"),
@@ -93,15 +93,42 @@
       );
 
 
-        //navigation link transition animations
-      $menu.find("a").on("click", function(e) {
-        TweenMax.set($html, {backgroundColor: "black"});
+      //navigation link transition animations
+      $menu.find("a").on("click", function(event) {
         TweenMax.staggerFromTo($menu.find("li"),
                       1,
                       {autoAlpha: 1, x:0},
                       { x:1000},
                       0.1)
 
+      });
+      //work link transition
+      $work.on("click", function(e) {
+        $work.toggleClass("is-active");
+        // if($work.hasClass("is-active")){
+        //   $TweenMax.to($body,
+        //               1,
+        //               {x: -1000});
+        // } else {
+        //   $TweenMax.to($body,
+        //               1,
+        //               {x: 0});
+        // }
+
+       $.ajax(this.href, {
+          success: function(data) {
+            TweenMax.to($body,
+                          1,
+                          {x: -1500});
+          },
+          error: function() {
+             console.log('no bueno');
+          }
+       }).done(function(){
+         TweenMax.to($body,
+                       1,
+                       {x: 0});
+       });
       });
     });
   });

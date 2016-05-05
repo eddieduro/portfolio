@@ -50,10 +50,14 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
-<body<?php print $attributes;?>>
-  <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  <?php print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
-</body>
+<main>
+  <div id="main">
+    <body<?php print $attributes;?>>
+      <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+      <?php print $page_top; ?>
+      <?php print $page; ?>
+      <?php print $page_bottom; ?>
+    </body>
+  </div>
+</main>
 </html>

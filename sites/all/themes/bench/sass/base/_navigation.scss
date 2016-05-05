@@ -29,21 +29,25 @@
 }
 
 .fa {
+	color: $white;
 	position: absolute;
 	display: block;
   top: 24rem;
   right: 10px;
-  z-index: 10;
   animation: bounce 2s infinite;
 }
 
+
 .work {
+	text-decoration: none;
+	color: $white;
+	font-family: $main_font;
 	position: absolute;
 	display: block;
-  top: 25.5rem;
-  right: 10px;
-  z-index: 10;
+  top: 24rem;
+  right: 65px;
 }
+
 #block-system-main-menu{
     opacity: 0;
 	.content {
