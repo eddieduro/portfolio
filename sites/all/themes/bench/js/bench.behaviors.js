@@ -85,6 +85,12 @@
                         {autoAlpha: 0},
                         {autoAlpha: 1})
       );
+      timeline.add(
+        TweenMax.fromTo($work,
+                        1,
+                        {autoAlpha: 0},
+                        {autoAlpha: 1})
+      );
 
 
         //navigation link transition animations
