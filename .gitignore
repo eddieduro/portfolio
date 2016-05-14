@@ -18,13 +18,12 @@
 *.jar
 *.rar
 *.tar
-*.zip
 *.tgz
 
 # Logs and databases #
 ######################
 *.log
-*.sql
+
 
 # OS generated files #
 ######################
