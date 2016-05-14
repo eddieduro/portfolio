@@ -72,24 +72,32 @@
 ?>
 <div class="l-page">
   <header class="l-header" role="banner">
-    <div class="l-branding">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-      <?php endif; ?>
-
-      <?php if ($site_name || $site_slogan): ?>
-        <?php if ($site_name): ?>
-          <h1 class="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-          </h1>
+    <div class="homepage-hero-module">
+      <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth" id="heroVideo" width="100%" height="auto">
+            <source src="sites/all/themes/bench/Aloha-Mundo/MP4/Aloha-Mundo.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+      </div>
+      <div class="l-branding">
+        <?php if ($logo): ?>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
         <?php endif; ?>
 
-        <?php if ($site_slogan): ?>
-          <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
-        <?php endif; ?>
-      <?php endif; ?>
+        <?php if ($site_name || $site_slogan): ?>
+          <?php if ($site_name): ?>
+            <h1 class="site-name">
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+            </h1>
+          <?php endif; ?>
 
-      <?php print render($page['branding']); ?>
+          <?php if ($site_slogan): ?>
+            <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
+          <?php endif; ?>
+        <?php endif; ?>
+
+        <?php print render($page['branding']); ?>
+      </div>
     </div>
 
     <?php print render($page['header']); ?>

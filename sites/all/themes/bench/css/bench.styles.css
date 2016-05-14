@@ -1,11 +1,8 @@
 /* Text */
 @import url(https://fonts.googleapis.com/css?family=Cambay:400,700);
 .l-header {
-  background: url("https://images.unsplash.com/photo-1432383079404-c66efb4828a3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1721166ddb88c0269bfbb82cc07d488f") center no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   width: 100%;
-  height: 650px;
+  height: 850px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +12,19 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.video-container #heroVideo {
+  position: absolute;
+  left: 50%;
+  /* The following will size the video to fit the full container. Not necessary, just nice.*/
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0; }
 
 .site-name span {
   font-family: "Camby", sans-serif;
@@ -183,6 +193,7 @@ tr {
   visibility: hidden; }
 
 .container {
+  padding-top: 15em;
   margin: 1em; }
 
 button:focus {

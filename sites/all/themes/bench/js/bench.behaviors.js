@@ -1,7 +1,7 @@
 (function ($) {
   $(document).ready(function(){
 
-    let timeline      = new TimelineMax({delay:3.0}),
+    let timeline      = new TimelineMax({delay:1.0}),
         $site_name    = $('.site-name'),
         $site_slogan  = $('.site-slogan'),
         $hamburger    = $(".hamburger"),
