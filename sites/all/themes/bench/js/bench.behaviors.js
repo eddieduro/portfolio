@@ -85,11 +85,11 @@
                         {autoAlpha: 1})
       );
 
-      //work link animation
-    
+
 
         //navigation link transition animations
       $menu.find("a").on("click", function(e) {
+
 
       });
     });
