@@ -2,7 +2,6 @@
   $(document).ready(function(){
 
     let timeline      = new TimelineMax({delay:3.0}),
-        startup       = new TimelineMax({delay:3.0}),
         $site_name    = $('.site-name'),
         $site_slogan  = $('.site-slogan'),
         $hamburger    = $(".hamburger"),
@@ -16,11 +15,11 @@
     TweenMax.set($arrow, {autoAlpha: 0});
     TweenMax.set($site_name.find("span"), {autoAlpha: 0}); //Set site name opactiy to 0.
     TweenMax.set($site_slogan, {autoAlpha: 0}); //Set site slogan opactiy to 0.
-    
+
     //When window loads animations
 
     $(window).load(function(){
-  
+
       TweenMax.set($menu, {autoAlpha: 0}); //Menu opacity 0
       TweenMax.set($menu.find("li"), {x:-1000});
 
@@ -80,30 +79,18 @@
                             0.1);
       // arrow animation
       timeline.add(
-        TweenMax.fromTo($arrow, 
+        TweenMax.fromTo($arrow,
                         1,
                         {autoAlpha: 0},
                         {autoAlpha: 1})
       );
 
-      work link animation
-      timeline.add(
-        timeline.fromTo($work,
-                              1,
-                              {y: -30, autoAlpha: 0},
-                              {y: 0, autoAlpha: 1, ease: Back.easeOut},
-                              0.1)
-        );
+      //work link animation
+    
 
         //navigation link transition animations
       $menu.find("a").on("click", function(e) {
-        TweenMax.set($html, {backgroundColor: "black"});
-        TweenMax.staggerFromTo($menu.find("li"),
-                      1,
-                      {autoAlpha: 1, x:0},
-                      { x:1000},
-                      0.1)
-        
+
       });
     });
   });

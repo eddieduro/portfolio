@@ -10,17 +10,25 @@ var sassSources     = ['sass/**/*.scss'];
 
 gulp.task('sass', function () {
   return gulp.src(sassSources)
-    .pipe(sass({   
+    .pipe(sass({
         includePaths: ['bower_components/compass-mixins/lib']}
     ))
     .pipe(gulp.dest('./css'))
     .pipe(reload({stream: true}))
 })
 
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
+
 
 gulp.task('watch-server', ['sass'], function() {
     browserSync.init( {
-        // browsersync with a MAMP php server 
+        // browsersync with a MAMP php server
         // Note: BS still serves on port 3000
         proxy: "localhost:8888",
         reloadOnRestart: true
