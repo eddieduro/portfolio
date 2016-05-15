@@ -33,9 +33,10 @@
 	position: absolute;
 	display: block;
 	font-size: 2em;
-	left: 50%;
+	left: 49%;
   bottom: 0;
   animation: bounce 2s infinite;
+	z-index: 2;
 }
 
 

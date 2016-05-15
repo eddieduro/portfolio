@@ -12,17 +12,17 @@
 	overflow: hidden;
 }
 .video-container #heroVideo{
-	position: absolute; // Play the video in full screen mode
+	position: absolute;
 	left: 50%;
-  /* The following will size the video to fit the full container. Not necessary, just nice.*/
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  z-index: 0;
+  z-index: 1;
 }
 .site-name {
 	span{
+		z-index: 2;
 		font-family: $main_font;
 		font-weight: 700;
 		position: relative;
@@ -38,6 +38,7 @@
 }
 
 .site-slogan {
+	z-index: 2;
 	font-family: $main_font;
 	font-size: 1.5em;
 	position: relative;

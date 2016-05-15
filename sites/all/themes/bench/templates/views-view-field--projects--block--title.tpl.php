@@ -22,6 +22,4 @@
  * the view is modified.
  */
 ?>
-<div class="smoothScroll" id="work">
 <span class="project-title"><?php print $output; ?></span>
-</div>

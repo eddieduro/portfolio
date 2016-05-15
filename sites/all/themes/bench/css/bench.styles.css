@@ -21,12 +21,12 @@
 .video-container #heroVideo {
   position: absolute;
   left: 50%;
-  /* The following will size the video to fit the full container. Not necessary, just nice.*/
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 0; }
+  z-index: 1; }
 
 .site-name span {
+  z-index: 2;
   font-family: "Camby", sans-serif;
   font-weight: 700;
   position: relative;
@@ -39,6 +39,7 @@
     color: #D6D9D9; }
 
 .site-slogan {
+  z-index: 2;
   font-family: "Camby", sans-serif;
   font-size: 1.5em;
   position: relative;
@@ -87,10 +88,11 @@
   position: absolute;
   display: block;
   font-size: 2em;
-  left: 50%;
+  left: 49%;
   bottom: 0;
   -webkit-animation: bounce 2s infinite;
-          animation: bounce 2s infinite; }
+          animation: bounce 2s infinite;
+  z-index: 2; }
 
 #block-system-main-menu {
   opacity: 0; }
@@ -185,10 +187,37 @@ tr {
   visibility: hidden; }
 
 .container {
-  padding-top: 15em;
+  padding-top: 10em;
   margin: 1em; }
+
+h1, h2, h3, h4 {
+  font-family: "Camby", sans-serif; }
 
 button:focus {
   outline: 0; }
+
+.project-section {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+  z-index: 1; }
+
+.skewed-bg {
+  background: #00B285;
+  padding: 400px 0;
+  -webkit-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+  margin-top: -500px;
+  position: absolute;
+  margin-left: -100px;
+  margin-right: -100px;
+  left: 0;
+  right: 0; }
+
+.projects {
+  margin-top: 10rem;
+  -webkit-transform: skew(0deg, 10deg);
+          transform: skew(0deg, 10deg); }
 
 /*# sourceMappingURL=bench.styles.css.map */

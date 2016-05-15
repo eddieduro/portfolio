@@ -1,0 +1,21 @@
+<?php
+
+function bench_preprocess_block(&$variables) {
+    $block = $variables['block'];
+    if ($block->module == 'views' && $block->delta == 'projects-block') {
+      $variable['class']['skewed-bg'] = 0;
+      $variables['title_attributes_array']['class'][] = 'project-section';
+    }
+}
+
+function bench_preprocess_views_view(&$variables) {
+  // 'MYBLOCK' usually comes as 'block' if this view only has one
+  if ($variables['view']->name == 'projects' && $variables['view']->current_display == 'block') {
+    // here I add a class that contains the current theme's name
+    global $theme;
+    $theme_name = array_pop(explode('/', (drupal_get_path('theme', $theme))));
+
+    // but you can simply do the following as well
+    $variables['classes_array'][4] = 0 ;
+  }
+}

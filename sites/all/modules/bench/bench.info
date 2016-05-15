@@ -1,0 +1,5 @@
+name = Bench block customization
+description = customize block layout
+package = Custom Modules
+core = 7.x
+files[] = bench.module
