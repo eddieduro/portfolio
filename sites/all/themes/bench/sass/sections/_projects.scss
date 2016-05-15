@@ -26,6 +26,7 @@
 }
 
 .skewed-bg {
+  overflow: hidden;
   background: $main-color;
   padding: 400px 0;
   z-index: 2;

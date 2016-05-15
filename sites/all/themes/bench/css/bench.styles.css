@@ -3,9 +3,15 @@
 .l-header {
   width: 100%;
   height: 850px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .video-container {
   width: 100%;
@@ -16,8 +22,6 @@
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 3; }
 
@@ -44,13 +48,27 @@
   .site-slogan:hover {
     cursor: inherit; }
 
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px); } }
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
   40% {
-    transform: translateY(-30px); }
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
   60% {
-    transform: translateY(-15px); } }
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px); } }
 
 .hamburger {
   position: absolute;
@@ -72,7 +90,8 @@
   font-size: 2em;
   left: 49%;
   bottom: 0;
-  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
   z-index: 3; }
 
 .about-arrow {
@@ -90,9 +109,15 @@
     position: fixed;
     top: 0;
     left: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   #block-system-main-menu ul li.leaf {
     list-style-image: none;
     list-style-type: none; }
@@ -121,7 +146,6 @@
           opacity: 0;
           -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
-          -webkit-transition: all 0.3s ease-in-out 0s;
           transition: all 0.3s ease-in-out 0s; }
         #block-system-main-menu ul.menu li a:hover:before {
           visibility: visible;
@@ -134,18 +158,25 @@
   margin-right: auto; }
 
 .view-projects tr {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-flow: row wrap; }
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
   .view-projects tr td {
     padding: 0 2px;
-    flex: 1 33%;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
+    -webkit-flex: 1 33%;
+        -ms-flex: 1 33%;
+            flex: 1 33%;
     transition: all 0.3s; }
     .view-projects tr td:hover {
-      -moz-transform: scale(1.1);
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
     .view-projects tr td:hover .project-title {
@@ -171,6 +202,9 @@ body {
   background-color: #fff;
   width: 100vw;
   overflow-x: hidden; }
+
+table, th, tr, td {
+  border: none; }
 
 button:focus {
   outline: 0; }
@@ -198,6 +232,7 @@ button:focus {
     margin-left: -50%; }
 
 .skewed-bg {
+  overflow: hidden;
   background: #00B285;
   padding: 400px 0;
   z-index: 2;
@@ -212,7 +247,8 @@ button:focus {
 
 .projects {
   margin-top: 10rem;
-  transform: skew(0deg, 10deg); }
+  -webkit-transform: skew(0deg, 10deg);
+          transform: skew(0deg, 10deg); }
 
 #block-views-about-me-block {
   background-color: #222;
@@ -229,7 +265,8 @@ button:focus {
   right: 0; }
 
 .about-section {
-  transform: skew(0deg, -10deg);
+  -webkit-transform: skew(0deg, -10deg);
+          transform: skew(0deg, -10deg);
   font-size: 2.7em;
   color: #F2F5F5;
   text-align: center;
@@ -252,11 +289,20 @@ button:focus {
     margin-left: -50%; }
 
 .about {
-  transform: skew(0deg, -10deg);
+  -webkit-transform: skew(0deg, -10deg);
+          transform: skew(0deg, -10deg);
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap; }
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
   .about h3 {
     margin-left: 2.1em;
     font-size: 2em;
@@ -284,3 +330,5 @@ button:focus {
   left: 50%;
   top: 0;
   position: absolute; }
+
+/*# sourceMappingURL=bench.styles.css.map */

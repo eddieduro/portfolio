@@ -235,6 +235,11 @@ body {
   overflow-x: hidden;
 }
 
+/* line 10, ../sass/base/_default.scss */
+table, th, tr, td {
+  border: none;
+}
+
 /* line 2, ../sass/components/_button.scss */
 button:focus {
   outline: 0;
@@ -272,6 +277,7 @@ button:focus {
 
 /* line 28, ../sass/sections/_projects.scss */
 .skewed-bg {
+  overflow: hidden;
   background: #00B285;
   padding: 400px 0;
   z-index: 2;
@@ -285,7 +291,7 @@ button:focus {
   right: 0;
 }
 
-/* line 42, ../sass/sections/_projects.scss */
+/* line 43, ../sass/sections/_projects.scss */
 .projects {
   margin-top: 10rem;
   transform: skew(0deg, 10deg);
