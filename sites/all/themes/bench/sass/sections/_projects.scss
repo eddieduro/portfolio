@@ -1,5 +1,6 @@
 .project-section{
-  font-size: 2em;
+  font-size: 2.7em;
+  color: $header_color;
   text-align: center;
   margin-bottom: 3.5rem;
   position: relative;
@@ -20,6 +21,6 @@
 }
 
 .projects {
-  margin-top: 10rem; 
+  margin-top: 10rem;
   transform: skew(0deg, 10deg);
 }

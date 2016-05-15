@@ -222,6 +222,11 @@ h1, h2, h3, h4 {
   font-family: "Camby", sans-serif;
 }
 
+/* line 5, ../sass/base/_default.scss */
+body {
+  background-color: #222;
+}
+
 /* line 2, ../sass/components/_button.scss */
 button:focus {
   outline: 0;
@@ -229,14 +234,15 @@ button:focus {
 
 /* line 1, ../sass/sections/_projects.scss */
 .project-section {
-  font-size: 2em;
+  font-size: 2.7em;
+  color: #F2F5F5;
   text-align: center;
   margin-bottom: 3.5rem;
   position: relative;
   z-index: 1;
 }
 
-/* line 9, ../sass/sections/_projects.scss */
+/* line 10, ../sass/sections/_projects.scss */
 .skewed-bg {
   background: #00B285;
   padding: 400px 0;
@@ -250,7 +256,7 @@ button:focus {
   right: 0;
 }
 
-/* line 22, ../sass/sections/_projects.scss */
+/* line 23, ../sass/sections/_projects.scss */
 .projects {
   margin-top: 10rem;
   transform: skew(0deg, 10deg);
