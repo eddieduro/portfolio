@@ -88,6 +88,6 @@
         <?php print $feed_icon; ?>
       </div>
     <?php endif; ?>
-
+    <a class="smoothScroll" href="#about"><i class="fa fa-chevron-down about-arrow" aria-hidden="true"></i></a>
   </div><?php /* class view */ ?>
 </div>
