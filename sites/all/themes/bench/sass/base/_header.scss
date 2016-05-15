@@ -18,11 +18,11 @@
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  z-index: 1;
+  z-index: 3;
 }
 .site-name {
 	span{
-		z-index: 2;
+		z-index: 3;
 		font-family: $main_font;
 		font-weight: 700;
 		position: relative;
@@ -38,7 +38,7 @@
 }
 
 .site-slogan {
-	z-index: 2;
+	z-index: 3;
 	font-family: $main_font;
 	font-size: 1.5em;
 	position: relative;

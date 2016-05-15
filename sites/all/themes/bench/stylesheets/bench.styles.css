@@ -24,12 +24,12 @@
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 3;
 }
 
 /* line 24, ../sass/base/_header.scss */
 .site-name span {
-  z-index: 2;
+  z-index: 3;
   font-family: "Camby", sans-serif;
   font-weight: 700;
   position: relative;
@@ -47,7 +47,7 @@
 
 /* line 40, ../sass/base/_header.scss */
 .site-slogan {
-  z-index: 2;
+  z-index: 3;
   font-family: "Camby", sans-serif;
   font-size: 1.5em;
   position: relative;
@@ -100,7 +100,7 @@
   left: 49%;
   bottom: 0;
   animation: bounce 2s infinite;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* line 42, ../sass/base/_navigation.scss */
@@ -230,7 +230,7 @@ h1, h2, h3, h4 {
 
 /* line 5, ../sass/base/_default.scss */
 body {
-  background-color: #222;
+  background-color: #fff;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -247,7 +247,7 @@ button:focus {
   text-align: center;
   margin-bottom: 3.5rem;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 /* line 8, ../sass/sections/_projects.scss */
 .project-section:after, .project-section:before {
@@ -274,6 +274,7 @@ button:focus {
 .skewed-bg {
   background: #00B285;
   padding: 400px 0;
+  z-index: 2;
   -webkit-transform: skew(0deg, -10deg);
   transform: skew(0deg, -10deg);
   margin-top: -500px;
@@ -284,7 +285,7 @@ button:focus {
   right: 0;
 }
 
-/* line 41, ../sass/sections/_projects.scss */
+/* line 42, ../sass/sections/_projects.scss */
 .projects {
   margin-top: 10rem;
   transform: skew(0deg, 10deg);
@@ -292,11 +293,23 @@ button:focus {
 
 /* line 1, ../sass/sections/_about.scss */
 #block-views-about-me-block {
-  margin-top: 70em;
+  background-color: #222;
+  margin-top: 30em;
+  padding-top: 400px;
+  padding-bottom: 500px;
+  -webkit-transform: skew(0deg, 10deg);
+  transform: skew(0deg, 10deg);
+  position: absolute;
+  margin-left: -100px;
+  margin-right: -100px;
+  z-index: 1;
+  left: 0;
+  right: 0;
 }
 
-/* line 5, ../sass/sections/_about.scss */
+/* line 16, ../sass/sections/_about.scss */
 .about-section {
+  transform: skew(0deg, -10deg);
   font-size: 2.7em;
   color: #F2F5F5;
   text-align: center;
@@ -304,7 +317,7 @@ button:focus {
   position: relative;
   z-index: 1;
 }
-/* line 12, ../sass/sections/_about.scss */
+/* line 24, ../sass/sections/_about.scss */
 .about-section:after, .about-section:before {
   background-color: #00B285;
   content: "";
@@ -314,55 +327,59 @@ button:focus {
   vertical-align: middle;
   width: 2em;
 }
-/* line 22, ../sass/sections/_about.scss */
+/* line 34, ../sass/sections/_about.scss */
 .about-section:after {
   left: 0.5em;
   margin-right: -50%;
 }
-/* line 26, ../sass/sections/_about.scss */
+/* line 38, ../sass/sections/_about.scss */
 .about-section:before {
   right: 0.5em;
   margin-left: -50%;
 }
 
-/* line 32, ../sass/sections/_about.scss */
+/* line 44, ../sass/sections/_about.scss */
 .about {
+  transform: skew(0deg, -10deg);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-flow: row wrap;
 }
-/* line 36, ../sass/sections/_about.scss */
+/* line 50, ../sass/sections/_about.scss */
 .about h3 {
+  margin-left: 2.1em;
   font-size: 2em;
   color: #00B285;
 }
 
-/* line 41, ../sass/sections/_about.scss */
+/* line 56, ../sass/sections/_about.scss */
 .about-header {
   color: #F2F5F5;
   padding: 0 5em;
 }
 
-/* line 45, ../sass/sections/_about.scss */
+/* line 60, ../sass/sections/_about.scss */
 .about-body {
   margin-top: 5rem;
   position: absolute;
   color: #F2F5F5;
-  float: right;
 }
-/* line 50, ../sass/sections/_about.scss */
+/* line 64, ../sass/sections/_about.scss */
 .about-body p {
   font-size: 1.1em;
   margin-top: -2rem;
-  padding: 0 4.5em;
+  padding: 0 8.5em;
 }
 
-/* line 57, ../sass/sections/_about.scss */
+/* line 71, ../sass/sections/_about.scss */
 .views-field-field-profile-picture img {
   width: auto;
   height: 300px;
   border-radius: 50%;
-  position: absolute;
+  margin-left: -45em;
   padding: 0 5em;
-  left: 0;
+  left: 50%;
+  top: 0;
+  position: absolute;
 }
