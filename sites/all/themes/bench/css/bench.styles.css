@@ -315,10 +315,11 @@ button:focus {
 .about-body {
   margin-top: 5rem;
   position: absolute;
-  color: #F2F5F5; }
+  color: #F2F5F5;
+  margin-top: 1rem; }
   .about-body p {
     font-size: 1.1em;
-    margin-top: -2rem;
+    margin-top: 1rem;
     padding: 0 8.5em; }
 
 .views-field-field-profile-picture img {

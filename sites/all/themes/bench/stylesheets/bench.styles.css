@@ -370,15 +370,16 @@ button:focus {
   margin-top: 5rem;
   position: absolute;
   color: #F2F5F5;
+  margin-top: 1rem;
 }
-/* line 64, ../sass/sections/_about.scss */
+/* line 65, ../sass/sections/_about.scss */
 .about-body p {
   font-size: 1.1em;
-  margin-top: -2rem;
+  margin-top: 1rem;
   padding: 0 8.5em;
 }
 
-/* line 71, ../sass/sections/_about.scss */
+/* line 72, ../sass/sections/_about.scss */
 .views-field-field-profile-picture img {
   width: auto;
   height: 300px;
