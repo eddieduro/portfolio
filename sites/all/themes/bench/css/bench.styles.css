@@ -199,7 +199,9 @@ h1, h2, h3, h4 {
   font-family: "Camby", sans-serif; }
 
 body {
-  background-color: #222; }
+  background-color: #222;
+  width: 100vw;
+  overflow-x: hidden; }
 
 button:focus {
   outline: 0; }

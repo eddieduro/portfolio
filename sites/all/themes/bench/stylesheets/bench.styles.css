@@ -232,6 +232,8 @@ h1, h2, h3, h4 {
 /* line 5, ../sass/base/_default.scss */
 body {
   background-color: #222;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /* line 2, ../sass/components/_button.scss */
