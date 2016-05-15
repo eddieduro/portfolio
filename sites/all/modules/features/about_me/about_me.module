@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the about_me feature.
+ */
+
+include_once 'about_me.features.inc';
