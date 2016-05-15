@@ -1,0 +1,65 @@
+#block-views-about-me-block{
+  margin-top: 70em;
+}
+
+.about-section{
+  font-size: 2.7em;
+  color: $header_color;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+  z-index: 1;
+  &:after,
+  &:before {
+    background-color: $main-color;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  &:after{
+    left: 0.5em;
+    margin-right: -50%;
+  }
+  &:before{
+    right: 0.5em;
+    margin-left: -50%;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h3{
+    font-size: 2em;
+    color: $main_color;
+  }
+}
+.about-header {
+  color: $white;
+  padding: 0 5em;
+}
+.about-body {
+  margin-top: 5rem;
+  position: absolute;
+  color: $white;
+  float: right;
+  p{
+    font-size: 1.1em;
+    margin-top: -2rem;
+    padding: 0 4.5em;
+  }
+}
+.views-field-field-profile-picture{
+  img {
+  width: auto;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  padding: 0 5em;
+  left: 0;
+  }
+}
