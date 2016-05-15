@@ -1,12 +1,12 @@
 @keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 	40% {
-    transform: translateX(-30px);
+    transform: translateY(-30px);
   }
 	60% {
-    transform: translateX(-15px);
+    transform: translateY(-15px);
   }
 }
 
@@ -32,21 +32,12 @@
 	color: $white;
 	position: absolute;
 	display: block;
-  top: 24rem;
-  right: 10px;
+	font-size: 2em;
+	left: 50%;
+  bottom: 0;
   animation: bounce 2s infinite;
 }
 
-
-.work {
-	text-decoration: none;
-	color: $white;
-	font-family: $main_font;
-	position: absolute;
-	display: block;
-  top: 24rem;
-  right: 65px;
-}
 
 #block-system-main-menu{
     opacity: 0;
