@@ -248,8 +248,28 @@ button:focus {
   position: relative;
   z-index: 1;
 }
+/* line 8, ../sass/sections/_projects.scss */
+.project-section:after, .project-section:before {
+  background-color: #222;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 2em;
+}
+/* line 18, ../sass/sections/_projects.scss */
+.project-section:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+/* line 22, ../sass/sections/_projects.scss */
+.project-section:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
 
-/* line 10, ../sass/sections/_projects.scss */
+/* line 28, ../sass/sections/_projects.scss */
 .skewed-bg {
   background: #00B285;
   padding: 400px 0;
@@ -263,7 +283,7 @@ button:focus {
   right: 0;
 }
 
-/* line 23, ../sass/sections/_projects.scss */
+/* line 41, ../sass/sections/_projects.scss */
 .projects {
   margin-top: 10rem;
   transform: skew(0deg, 10deg);
