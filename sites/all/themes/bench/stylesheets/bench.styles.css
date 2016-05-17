@@ -3,7 +3,7 @@
 /* line 1, ../sass/base/_header.scss */
 .l-header {
   width: 100%;
-  height: 850px;
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,21 +32,22 @@
 .site-name span {
   z-index: 3;
   font-family: "Camby", sans-serif;
+  margin-top: -2.1em;
   font-weight: 700;
   position: relative;
   font-size: 3em;
   color: #F2F5F5;
 }
-/* line 32, ../sass/base/_header.scss */
+/* line 33, ../sass/base/_header.scss */
 .site-name a {
   text-decoration: none;
 }
-/* line 34, ../sass/base/_header.scss */
+/* line 35, ../sass/base/_header.scss */
 .site-name a:hover {
   color: #D6D9D9;
 }
 
-/* line 40, ../sass/base/_header.scss */
+/* line 41, ../sass/base/_header.scss */
 .site-slogan {
   z-index: 3;
   font-family: "Camby", sans-serif;
@@ -55,7 +56,7 @@
   color: #F2F5F5;
   text-align: center;
 }
-/* line 47, ../sass/base/_header.scss */
+/* line 48, ../sass/base/_header.scss */
 .site-slogan:hover {
   cursor: inherit;
 }
@@ -93,11 +94,11 @@
 }
 
 /* line 31, ../sass/base/_navigation.scss */
-.fa {
+.fa-chevron-down {
   color: #F2F5F5;
   position: absolute;
   display: block;
-  font-size: 2em;
+  font-size: 4em;
   left: 49%;
   bottom: 0;
   animation: bounce 2s infinite;
@@ -105,17 +106,29 @@
 }
 
 /* line 42, ../sass/base/_navigation.scss */
-.about-arrow {
-  position: absolute;
-  padding-top: 15.5em;
-  top: 0;
+.home-arrow {
+  position: relative;
+  top: -15vh;
 }
 
-/* line 48, ../sass/base/_navigation.scss */
+/* line 47, ../sass/base/_navigation.scss */
+.about-arrow {
+  position: relative;
+  top: 40vh;
+}
+
+/* line 52, ../sass/base/_navigation.scss */
+.social-arrow {
+  position: relative;
+  top: 40vh;
+  margin-left: -3.0em;
+}
+
+/* line 58, ../sass/base/_navigation.scss */
 #block-system-main-menu {
   opacity: 0;
 }
-/* line 50, ../sass/base/_navigation.scss */
+/* line 60, ../sass/base/_navigation.scss */
 #block-system-main-menu .content {
   background-color: black;
   z-index: 10;
@@ -128,22 +141,22 @@
   align-items: center;
   justify-content: center;
 }
-/* line 63, ../sass/base/_navigation.scss */
+/* line 73, ../sass/base/_navigation.scss */
 #block-system-main-menu ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 68, ../sass/base/_navigation.scss */
+/* line 78, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu {
   border: none;
   list-style: none;
   text-align: left;
 }
-/* line 73, ../sass/base/_navigation.scss */
+/* line 83, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li {
   padding: 1rem;
 }
-/* line 75, ../sass/base/_navigation.scss */
+/* line 85, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a {
   position: relative;
   font-family: "Camby", sans-serif;
@@ -152,7 +165,7 @@
   color: #fff;
   font-size: 2.0em;
 }
-/* line 82, ../sass/base/_navigation.scss */
+/* line 92, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:before {
   content: "";
   position: absolute;
@@ -168,7 +181,7 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 97, ../sass/base/_navigation.scss */
+/* line 107, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:hover:before {
   visibility: visible;
   opacity: 0.9;
@@ -246,6 +259,11 @@ table, th, tr, td {
   border: none;
 }
 
+/* line 13, ../sass/base/_default.scss */
+a {
+  text-decoration: none;
+}
+
 /* line 2, ../sass/components/_button.scss */
 button:focus {
   outline: 0;
@@ -291,7 +309,7 @@ button:focus {
   -webkit-transform: skew(0deg, -10deg);
   transform: skew(0deg, -10deg);
   margin-top: -600px;
-  position: absolute;
+  position: relative;
   margin-left: -100px;
   margin-right: -100px;
   left: 0;
@@ -397,4 +415,67 @@ button:focus {
   left: 50%;
   top: 0;
   position: absolute;
+}
+
+/* line 1, ../sass/sections/_socialmedia.scss */
+.social-media {
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50vh;
+}
+/* line 7, ../sass/sections/_socialmedia.scss */
+.social-media a {
+  padding-left: 3em;
+  padding-top: 3em;
+}
+/* line 10, ../sass/sections/_socialmedia.scss */
+.social-media a i {
+  font-size: 4em;
+  color: #222;
+}
+/* line 13, ../sass/sections/_socialmedia.scss */
+.social-media a i:hover {
+  color: #00B285;
+}
+
+/* line 20, ../sass/sections/_socialmedia.scss */
+.social-media-icon {
+  color: #222;
+  display: block;
+  font-size: 2em;
+  left: 50%;
+  z-index: 3;
+}
+
+/* line 28, ../sass/sections/_socialmedia.scss */
+.social-section {
+  font-size: 2.7em;
+  color: #00B285;
+  text-align: center;
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: -5em;
+  z-index: 3;
+}
+/* line 36, ../sass/sections/_socialmedia.scss */
+.social-section:after, .social-section:before {
+  background-color: #222;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 2em;
+}
+/* line 46, ../sass/sections/_socialmedia.scss */
+.social-section:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+/* line 50, ../sass/sections/_socialmedia.scss */
+.social-section:before {
+  right: 0.5em;
+  margin-left: -50%;
 }

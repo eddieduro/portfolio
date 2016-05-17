@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Cambay:400,700);
 .l-header {
   width: 100%;
-  height: 850px;
+  height: 650px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +29,7 @@
 .site-name span {
   z-index: 3;
   font-family: "Camby", sans-serif;
+  margin-top: -2.1em;
   font-weight: 700;
   position: relative;
   font-size: 3em;
@@ -84,21 +85,29 @@
     .hamburger .hamburger-inner:after {
       background-color: #fff; }
 
-.fa {
+.fa-chevron-down {
   color: #F2F5F5;
   position: absolute;
   display: block;
-  font-size: 2em;
+  font-size: 4em;
   left: 49%;
   bottom: 0;
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
   z-index: 3; }
 
+.home-arrow {
+  position: relative;
+  top: -15vh; }
+
 .about-arrow {
-  position: absolute;
-  padding-top: 15.5em;
-  top: 0; }
+  position: relative;
+  top: 40vh; }
+
+.social-arrow {
+  position: relative;
+  top: 40vh;
+  margin-left: -3.0em; }
 
 #block-system-main-menu {
   opacity: 0; }
@@ -210,6 +219,9 @@ body {
 table, th, tr, td {
   border: none; }
 
+a {
+  text-decoration: none; }
+
 button:focus {
   outline: 0; }
 
@@ -244,7 +256,7 @@ button:focus {
   -webkit-transform: skew(0deg, -10deg);
   transform: skew(0deg, -10deg);
   margin-top: -600px;
-  position: absolute;
+  position: relative;
   margin-left: -100px;
   margin-right: -100px;
   left: 0;
@@ -337,5 +349,54 @@ button:focus {
   left: 50%;
   top: 0;
   position: absolute; }
+
+.social-media {
+  z-index: 4;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 50vh; }
+  .social-media a {
+    padding-left: 3em;
+    padding-top: 3em; }
+    .social-media a i {
+      font-size: 4em;
+      color: #222; }
+      .social-media a i:hover {
+        color: #00B285; }
+
+.social-media-icon {
+  color: #222;
+  display: block;
+  font-size: 2em;
+  left: 50%;
+  z-index: 3; }
+
+.social-section {
+  font-size: 2.7em;
+  color: #00B285;
+  text-align: center;
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: -5em;
+  z-index: 3; }
+  .social-section:after, .social-section:before {
+    background-color: #222;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 2em; }
+  .social-section:after {
+    left: 0.5em;
+    margin-right: -50%; }
+  .social-section:before {
+    right: 0.5em;
+    margin-left: -50%; }
 
 /*# sourceMappingURL=bench.styles.css.map */

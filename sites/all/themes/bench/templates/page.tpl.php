@@ -111,7 +111,7 @@
   <div class="l-main">
     <div class="l-content" role="main">
     <?php if ($is_front): ?>
-      <a class="smoothScroll" href="#work" id="top"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+      <a class="smoothScroll" href="#work" id="top"><i class="fa fa-chevron-down home-arrow" aria-hidden="true"></i></a>
     <?php endif; ?>
     <button class="hamburger hamburger--collapse" type="button">
       <span class="hamburger-box">

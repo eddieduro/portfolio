@@ -88,6 +88,16 @@
         <?php print $feed_icon; ?>
       </div>
     <?php endif; ?>
-    <a class="smoothScroll" href="#about"><i class="fa fa-chevron-down about-arrow" aria-hidden="true"></i></a>
+    <a class="smoothScroll" href="#social"><i class="fa fa-chevron-down about-arrow" aria-hidden="true"></i></a>
   </div><?php /* class view */ ?>
+</div>
+<div class='social'>
+  <h2 class='social-section'>Connect</h2>
+</div>
+<div id="social"></div>
+ <div class="social-media">
+  <a href="https://www.linkedin.com/in/edwardduro"><i class="fa fa-linkedin social-media-icon" aria-hidden="true"></i></a>
+  <a href="https://www.twitter.com/e_jamesduro"><i class="fa fa-twitter social-media-icon" aria-hidden="true"></i></a>
+  <a href="https://www.github.com/eddieduro"><i class="fa fa-github social-media-icon" aria-hidden="true"></i></a>
+  <span><a class="smoothScroll" href="#about" id="social-arrow"><i class="fa fa-chevron-down social-arrow" aria-hidden="true"></i></a></span>
 </div>
