@@ -71,7 +71,7 @@
  */
 ?>
 <div class="l-page">
-  <header class="l-header" role="banner">
+  <header class="l-header" role="banner" id="top">
     <div class="homepage-hero-module">
       <div class="video-container">
         <div class="filter"></div>
@@ -111,7 +111,7 @@
   <div class="l-main">
     <div class="l-content" role="main">
     <?php if ($is_front): ?>
-      <a class="smoothScroll" href="#work" id="top"><i class="fa fa-chevron-down home-arrow" aria-hidden="true"></i></a>
+      <a class="smoothScroll" href="#work"><i class="fa fa-chevron-down home-arrow" aria-hidden="true"></i></a>
     <?php endif; ?>
     <button class="hamburger hamburger--collapse" type="button">
       <span class="hamburger-box">

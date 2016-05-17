@@ -45,22 +45,42 @@
   &:hover {
   	color: $main-color;
   }
+	@media(min-width: 400px){
+		margin-top: -4em;
+		margin-left: -0.5em;
+	}
 }
 
 .about-arrow {
 	position: relative;
-	top: 40vh;
+	top: 20vh;
 	&:hover {
   	color: #222;
   }
+	@media(min-width: 400px){
+		margin-left: -0.5em;
+	}
 }
 
 .social-arrow {
 	position: relative;
-	top: 40vh;
+	top: 20vh;
 	margin-left: -3.0em;
 }
 
+.top-arrow{
+	position: absolute;
+	top: 20vh;
+	right: 49%;
+	color: $white;
+	font-size: 4em;
+  bottom: 0;
+  animation: bounce 2s infinite;
+	@media(min-width: 400px){
+		top: 35vh;
+		margin-left: -0.5em;
+	}
+}
 #block-system-main-menu{
     opacity: 0;
 	.content {

@@ -88,4 +88,5 @@
     </div>
   <?php endif; ?>
 
+  <span><a class="smoothScroll" href="#top" id="top-arrow"><i class="fa fa-chevron-up top-arrow" aria-hidden="true"></i></a></span>
 </div><?php /* class view */ ?>
