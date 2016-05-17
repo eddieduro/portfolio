@@ -12,6 +12,9 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 400px) {
+    .l-header {
+      height: 850px; } }
 
 .video-container {
   width: 100%;
@@ -25,6 +28,16 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 3; }
+  @media (min-width: 400px) {
+    .video-container #heroVideo {
+      margin-top: -15em; } }
+
+video {
+  object-fit: cover; }
+  @media (min-width: 400px) {
+    video {
+      width: 100%;
+      height: 50%; } }
 
 .site-name span {
   z-index: 3;
@@ -39,6 +52,10 @@
   text-decoration: none; }
   .site-name a:hover {
     color: #D6D9D9; }
+
+@media (min-width: 400px) {
+  .site-name {
+    margin-top: -15em; } }
 
 .site-slogan {
   z-index: 3;
@@ -101,6 +118,9 @@
   top: -15vh; }
   .home-arrow:hover {
     color: #00B285; }
+  @media (min-width: 400px) {
+    .home-arrow {
+      margin-top: -3em; } }
 
 .about-arrow {
   position: relative;
@@ -110,7 +130,7 @@
 
 .social-arrow {
   position: relative;
-  top: 40vh;
+  top: 20vh;
   margin-left: -3.0em; }
 
 #block-system-main-menu {
@@ -224,7 +244,7 @@
     color: #F2F5F5;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1em; }
-  @media (max-width: 400px) {
+  @media (max-width: 401px) {
     .project-title {
       margin-left: 100px; } }
 
@@ -383,7 +403,7 @@ button:focus {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  top: 50vh; }
+  top: 20vh; }
   .social-media a {
     padding-left: 3em;
     padding-top: 3em; }

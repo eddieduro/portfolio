@@ -45,6 +45,9 @@
   &:hover {
   	color: $main-color;
   }
+	@media(min-width: 400px){
+		margin-top: -3em;
+	}
 }
 
 .about-arrow {
@@ -57,7 +60,7 @@
 
 .social-arrow {
 	position: relative;
-	top: 40vh;
+	top: 20vh;
 	margin-left: -3.0em;
 }
 

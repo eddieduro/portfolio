@@ -8,15 +8,21 @@
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 400px) {
+  /* line 1, ../sass/base/_header.scss */
+  .l-header {
+    height: 850px;
+  }
+}
 
-/* line 8, ../sass/base/_header.scss */
+/* line 11, ../sass/base/_header.scss */
 .video-container {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-/* line 13, ../sass/base/_header.scss */
+/* line 16, ../sass/base/_header.scss */
 .video-container #heroVideo {
   position: absolute;
   margin-top: -2.1em;
@@ -27,8 +33,26 @@
   transform: translate(-50%, -50%);
   z-index: 3;
 }
+@media (min-width: 400px) {
+  /* line 16, ../sass/base/_header.scss */
+  .video-container #heroVideo {
+    margin-top: -15em;
+  }
+}
 
-/* line 24, ../sass/base/_header.scss */
+/* line 29, ../sass/base/_header.scss */
+video {
+  object-fit: cover;
+}
+@media (min-width: 400px) {
+  /* line 29, ../sass/base/_header.scss */
+  video {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+/* line 37, ../sass/base/_header.scss */
 .site-name span {
   z-index: 3;
   font-family: "Camby", sans-serif;
@@ -38,16 +62,22 @@
   font-size: 3em;
   color: #F2F5F5;
 }
-/* line 33, ../sass/base/_header.scss */
+/* line 46, ../sass/base/_header.scss */
 .site-name a {
   text-decoration: none;
 }
-/* line 35, ../sass/base/_header.scss */
+/* line 48, ../sass/base/_header.scss */
 .site-name a:hover {
   color: #D6D9D9;
 }
+@media (min-width: 400px) {
+  /* line 36, ../sass/base/_header.scss */
+  .site-name {
+    margin-top: -15em;
+  }
+}
 
-/* line 41, ../sass/base/_header.scss */
+/* line 57, ../sass/base/_header.scss */
 .site-slogan {
   z-index: 3;
   font-family: "Camby", sans-serif;
@@ -56,7 +86,7 @@
   color: #F2F5F5;
   text-align: center;
 }
-/* line 48, ../sass/base/_header.scss */
+/* line 64, ../sass/base/_header.scss */
 .site-slogan:hover {
   cursor: inherit;
 }
@@ -114,29 +144,35 @@
 .home-arrow:hover {
   color: #00B285;
 }
+@media (min-width: 400px) {
+  /* line 42, ../sass/base/_navigation.scss */
+  .home-arrow {
+    margin-top: -3em;
+  }
+}
 
-/* line 50, ../sass/base/_navigation.scss */
+/* line 53, ../sass/base/_navigation.scss */
 .about-arrow {
   position: relative;
   top: 40vh;
 }
-/* line 53, ../sass/base/_navigation.scss */
+/* line 56, ../sass/base/_navigation.scss */
 .about-arrow:hover {
   color: #222;
 }
 
-/* line 58, ../sass/base/_navigation.scss */
+/* line 61, ../sass/base/_navigation.scss */
 .social-arrow {
   position: relative;
-  top: 40vh;
+  top: 20vh;
   margin-left: -3.0em;
 }
 
-/* line 64, ../sass/base/_navigation.scss */
+/* line 67, ../sass/base/_navigation.scss */
 #block-system-main-menu {
   opacity: 0;
 }
-/* line 66, ../sass/base/_navigation.scss */
+/* line 69, ../sass/base/_navigation.scss */
 #block-system-main-menu .content {
   background-color: black;
   z-index: 10;
@@ -149,22 +185,22 @@
   align-items: center;
   justify-content: center;
 }
-/* line 79, ../sass/base/_navigation.scss */
+/* line 82, ../sass/base/_navigation.scss */
 #block-system-main-menu ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 84, ../sass/base/_navigation.scss */
+/* line 87, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu {
   border: none;
   list-style: none;
   text-align: left;
 }
-/* line 89, ../sass/base/_navigation.scss */
+/* line 92, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li {
   padding: 1rem;
 }
-/* line 91, ../sass/base/_navigation.scss */
+/* line 94, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a {
   position: relative;
   font-family: "Camby", sans-serif;
@@ -173,7 +209,7 @@
   color: #fff;
   font-size: 2.0em;
 }
-/* line 98, ../sass/base/_navigation.scss */
+/* line 101, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:before {
   content: "";
   position: absolute;
@@ -189,7 +225,7 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 113, ../sass/base/_navigation.scss */
+/* line 116, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:hover:before {
   visibility: visible;
   opacity: 0.9;
@@ -274,7 +310,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1em;
 }
-@media (max-width: 400px) {
+@media (max-width: 401px) {
   /* line 48, ../sass/base/_grid.scss */
   .project-title {
     margin-left: 100px;
@@ -468,7 +504,7 @@ button:focus {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 50vh;
+  top: 20vh;
 }
 /* line 7, ../sass/sections/_socialmedia.scss */
 .social-media a {
