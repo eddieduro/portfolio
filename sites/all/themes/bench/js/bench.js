@@ -1,9 +1,11 @@
 (function($) {
   $(function() {
-  // This will select everything with the class smoothScroll
-  // This should prevent problems with carousel, scrollspy, etc...
-  $('.smoothScroll').click(function() {
-    console.log(this.pathname);
+  // let $projects = $('.projects'),
+  let $smoothScroll = $('.smoothScroll');
+
+  TweenMax.set($projects, {y: -10, autoAlpha: 0});
+
+  $smoothScroll.click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -14,11 +16,15 @@
         return false;
       }
     }
-  });
-});
-
-// Change the speed to whatever you want
-// Personally i think 1000 is too much
-// Try 800 or below, it seems not too much but it will make a difference
-
+    });
+  // if ($projects.visible()) {
+  //   TweenMax.to($arrow, 
+  //               1,
+  //               {y:0, autoAlpha: 1});
+  // } else {
+  //    TweenMax.to($arrow, 
+  //               1,
+  //               {y:0, autoAlpha: 1});
+  // }
+  // });
 })(jQuery);
