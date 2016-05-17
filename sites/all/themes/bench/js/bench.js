@@ -1,11 +1,12 @@
 (function($) {
   $(function() {
   // let $projects = $('.projects'),
-  let $smoothScroll = $('.smoothScroll');
+  var $smoothScroll = $('.smoothScroll');
 
-  TweenMax.set($projects, {y: -10, autoAlpha: 0});
+  // TweenMax.set($projects, {y: -10, autoAlpha: 0});
 
   $smoothScroll.click(function() {
+    console.log('works');
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -26,5 +27,5 @@
   //               1,
   //               {y:0, autoAlpha: 1});
   // }
-  // });
+  });
 })(jQuery);
