@@ -133,6 +133,16 @@ video {
   top: 20vh;
   margin-left: -3.0em; }
 
+.top-arrow {
+  position: absolute;
+  top: 20vh;
+  right: 49%;
+  color: #F2F5F5;
+  font-size: 4em;
+  bottom: 0;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite; }
+
 #block-system-main-menu {
   opacity: 0; }
   #block-system-main-menu .content {
@@ -323,7 +333,8 @@ button:focus {
   margin-right: -100px;
   z-index: 1;
   left: 0;
-  right: 0; }
+  right: 0;
+  overflow: hidden; }
 
 .about-section {
   -webkit-transform: skew(0deg, -10deg);

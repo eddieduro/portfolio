@@ -64,6 +64,15 @@
 	margin-left: -3.0em;
 }
 
+.top-arrow{
+	position: absolute;
+	top: 20vh;
+	right: 49%;
+	color: $white;
+	font-size: 4em;
+  bottom: 0;
+  animation: bounce 2s infinite;
+}
 #block-system-main-menu{
     opacity: 0;
 	.content {
