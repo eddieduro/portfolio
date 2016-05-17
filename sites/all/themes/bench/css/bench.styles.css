@@ -99,10 +99,14 @@
 .home-arrow {
   position: relative;
   top: -15vh; }
+  .home-arrow:hover {
+    color: #00B285; }
 
 .about-arrow {
   position: relative;
   top: 40vh; }
+  .about-arrow:hover {
+    color: #222; }
 
 .social-arrow {
   position: relative;

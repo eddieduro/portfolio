@@ -42,11 +42,17 @@
 .home-arrow {
 	position: relative;
   top: -15vh;
+  &:hover {
+  	color: $main-color;
+  }
 }
 
 .about-arrow {
 	position: relative;
 	top: 40vh;
+	&:hover {
+  	color: #222;
+  }
 }
 
 .social-arrow {

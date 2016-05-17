@@ -110,25 +110,33 @@
   position: relative;
   top: -15vh;
 }
+/* line 45, ../sass/base/_navigation.scss */
+.home-arrow:hover {
+  color: #00B285;
+}
 
-/* line 47, ../sass/base/_navigation.scss */
+/* line 50, ../sass/base/_navigation.scss */
 .about-arrow {
   position: relative;
   top: 40vh;
 }
+/* line 53, ../sass/base/_navigation.scss */
+.about-arrow:hover {
+  color: #222;
+}
 
-/* line 52, ../sass/base/_navigation.scss */
+/* line 58, ../sass/base/_navigation.scss */
 .social-arrow {
   position: relative;
   top: 40vh;
   margin-left: -3.0em;
 }
 
-/* line 58, ../sass/base/_navigation.scss */
+/* line 64, ../sass/base/_navigation.scss */
 #block-system-main-menu {
   opacity: 0;
 }
-/* line 60, ../sass/base/_navigation.scss */
+/* line 66, ../sass/base/_navigation.scss */
 #block-system-main-menu .content {
   background-color: black;
   z-index: 10;
@@ -141,22 +149,22 @@
   align-items: center;
   justify-content: center;
 }
-/* line 73, ../sass/base/_navigation.scss */
+/* line 79, ../sass/base/_navigation.scss */
 #block-system-main-menu ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 78, ../sass/base/_navigation.scss */
+/* line 84, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu {
   border: none;
   list-style: none;
   text-align: left;
 }
-/* line 83, ../sass/base/_navigation.scss */
+/* line 89, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li {
   padding: 1rem;
 }
-/* line 85, ../sass/base/_navigation.scss */
+/* line 91, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a {
   position: relative;
   font-family: "Camby", sans-serif;
@@ -165,7 +173,7 @@
   color: #fff;
   font-size: 2.0em;
 }
-/* line 92, ../sass/base/_navigation.scss */
+/* line 98, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:before {
   content: "";
   position: absolute;
@@ -181,7 +189,7 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 107, ../sass/base/_navigation.scss */
+/* line 113, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:hover:before {
   visibility: visible;
   opacity: 0.9;
