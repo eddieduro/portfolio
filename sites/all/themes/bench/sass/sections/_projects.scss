@@ -24,6 +24,10 @@
     right: 0.5em;
     margin-left: -50%;
   }
+  @media(max-width: 400px){
+    margin-top: -10em;
+    padding-bottom: 3em;
+  }
 }
 
 .skewed-bg {
@@ -39,6 +43,9 @@
   margin-right: -100px;
   left: 0;
   right: 0;
+  @media(max-width: 400px){
+    margin-top: -700px;
+  }
 }
 
 .projects {

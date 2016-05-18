@@ -35,6 +35,14 @@
     .video-container #heroVideo {
       margin-top: -15em; } }
 
+.no-video .video-container video,
+.touch .video-container video {
+  display: none; }
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important; }
+
 video {
   object-fit: cover; }
   @media (min-width: 400px) {
@@ -117,13 +125,14 @@ video {
   z-index: 3; }
 
 .home-arrow {
-  position: relative;
-  top: -15vh; }
+  position: absolute;
+  top: 0;
+  margin-top: 40%; }
   .home-arrow:hover {
     color: #00B285; }
-  @media (min-width: 400px) {
+  @media (max-width: 400px) {
     .home-arrow {
-      margin-top: -4em;
+      margin-top: 40vh;
       margin-left: -0.5em; } }
 
 .about-arrow {
@@ -151,7 +160,7 @@ video {
           animation: bounce 2s infinite; }
   @media (min-width: 400px) {
     .top-arrow {
-      top: 35vh;
+      top: 65vh;
       margin-left: -0.5em; } }
 
 #block-system-main-menu {
@@ -312,6 +321,10 @@ button:focus {
   .project-section:before {
     right: 0.5em;
     margin-left: -50%; }
+  @media (max-width: 400px) {
+    .project-section {
+      margin-top: -10em;
+      padding-bottom: 3em; } }
 
 .skewed-bg {
   overflow: hidden;
@@ -326,6 +339,9 @@ button:focus {
   margin-right: -100px;
   left: 0;
   right: 0; }
+  @media (max-width: 400px) {
+    .skewed-bg {
+      margin-top: -700px; } }
 
 .projects {
   margin-top: 10rem;
@@ -387,6 +403,9 @@ button:focus {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
+  @media (max-width: 400px) {
+    .about {
+      padding-top: 15em; } }
   .about h3 {
     margin-left: 2.1em;
     font-size: 2em;
@@ -395,12 +414,20 @@ button:focus {
 .about-header {
   color: #F2F5F5;
   padding: 0 5em; }
+  @media (max-width: 400px) {
+    .about-header {
+      margin-left: -5.7em;
+      left: 2em; } }
 
 .about-body {
   margin-top: 5rem;
   position: absolute;
   color: #F2F5F5;
   margin-top: 1rem; }
+  @media (max-width: 400px) {
+    .about-body {
+      margin-left: -2em;
+      left: 2em; } }
   .about-body p {
     font-size: 1.1em;
     margin-top: 1rem;
@@ -415,6 +442,11 @@ button:focus {
   left: 50%;
   top: 0;
   position: absolute; }
+  @media (max-width: 400px) {
+    .views-field-field-profile-picture img {
+      padding-top: 1em;
+      margin-left: -5em;
+      left: none; } }
 
 .social-media {
   z-index: 4;

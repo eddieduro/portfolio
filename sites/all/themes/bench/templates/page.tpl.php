@@ -77,7 +77,9 @@
         <div class="filter"></div>
         <video autoplay loop class="fillWidth" id="heroVideo" width="100%" height="auto">
             <source src="sites/all/themes/bench/Aloha-Mundo/MP4/Aloha-Mundo.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="sites/all/themes/bench/Aloha-Mundo/OGV/Aloha-Mundo.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
+          <a class="smoothScroll" href="#work"><i class="fa fa-chevron-down home-arrow" aria-hidden="true"></i></a>
       </div>
       <div class="l-branding">
         <?php if ($logo): ?>
@@ -111,7 +113,7 @@
   <div class="l-main">
     <div class="l-content" role="main">
     <?php if ($is_front): ?>
-      <a class="smoothScroll" href="#work"><i class="fa fa-chevron-down home-arrow" aria-hidden="true"></i></a>
+
     <?php endif; ?>
     <button class="hamburger hamburger--collapse" type="button">
       <span class="hamburger-box">

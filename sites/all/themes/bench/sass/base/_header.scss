@@ -29,6 +29,14 @@
 		margin-top: -15em;
 	}
 }
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
 video {
 	object-fit: cover;
 	@media(min-width: 400px){
