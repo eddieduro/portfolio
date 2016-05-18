@@ -32,13 +32,13 @@
 /* line 20, ../sass/base/_header.scss */
 .video-container #heroVideo {
   position: absolute;
-  margin-top: -2.1em;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 3;
+  margin-top: -13em;
 }
 @media (max-width: 400px) {
   /* line 20, ../sass/base/_header.scss */
@@ -68,10 +68,15 @@ video {
   /* line 41, ../sass/base/_header.scss */
   video {
     height: 400px;
+    max-width: 100%;
   }
 }
 
 /* line 49, ../sass/base/_header.scss */
+.site-name {
+  margin-top: -15em;
+}
+/* line 51, ../sass/base/_header.scss */
 .site-name span {
   z-index: 3;
   font-family: "Camby", sans-serif;
@@ -81,22 +86,22 @@ video {
   font-size: 3em;
   color: #F2F5F5;
 }
-/* line 58, ../sass/base/_header.scss */
+/* line 60, ../sass/base/_header.scss */
 .site-name a {
   text-decoration: none;
 }
-/* line 60, ../sass/base/_header.scss */
+/* line 62, ../sass/base/_header.scss */
 .site-name a:hover {
   color: #D6D9D9;
 }
 @media (max-width: 400px) {
-  /* line 48, ../sass/base/_header.scss */
+  /* line 49, ../sass/base/_header.scss */
   .site-name {
     margin-top: -15em;
   }
 }
 
-/* line 69, ../sass/base/_header.scss */
+/* line 71, ../sass/base/_header.scss */
 .site-slogan {
   z-index: 3;
   font-family: "Camby", sans-serif;
@@ -105,7 +110,7 @@ video {
   color: #F2F5F5;
   text-align: center;
 }
-/* line 76, ../sass/base/_header.scss */
+/* line 78, ../sass/base/_header.scss */
 .site-slogan:hover {
   cursor: inherit;
 }
@@ -384,7 +389,7 @@ h1, h2, h3, h4 {
 /* line 5, ../sass/base/_default.scss */
 body {
   background-color: #fff;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -461,16 +466,17 @@ button:focus {
   /* line 33, ../sass/sections/_projects.scss */
   .skewed-bg {
     margin-top: -700px;
+    margin-right: -170px;
   }
 }
 
-/* line 52, ../sass/sections/_projects.scss */
+/* line 53, ../sass/sections/_projects.scss */
 .projects {
   margin-top: 10rem;
   transform: skew(0deg, 10deg);
 }
 @media (max-width: 400px) {
-  /* line 52, ../sass/sections/_projects.scss */
+  /* line 53, ../sass/sections/_projects.scss */
   .projects {
     margin-left: -1em;
   }

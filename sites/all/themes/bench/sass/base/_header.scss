@@ -19,13 +19,13 @@
 }
 .video-container #heroVideo{
 	position: absolute;
-	margin-top: -2.1em;
 	left: 50%;
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   z-index: 3;
+	margin-top: -13em;
 	@media(max-width: 400px){
 		margin-top: -13em;
 	}
@@ -43,9 +43,11 @@ video {
 	object-fit: cover;
 	@media(max-width: 400px){
 		height: 400px;
+		max-width: 100%;
 	}
 }
 .site-name {
+	margin-top: -15em;
 	span{
 		z-index: 3;
 		font-family: $main_font;

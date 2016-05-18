@@ -27,11 +27,11 @@
 
 .video-container #heroVideo {
   position: absolute;
-  margin-top: -2.1em;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 3; }
+  z-index: 3;
+  margin-top: -13em; }
   @media (max-width: 400px) {
     .video-container #heroVideo {
       margin-top: -13em; } }
@@ -49,25 +49,26 @@ video {
   object-fit: cover; }
   @media (max-width: 400px) {
     video {
-      height: 400px; } }
+      height: 400px;
+      max-width: 100%; } }
 
-.site-name span {
-  z-index: 3;
-  font-family: "Camby", sans-serif;
-  margin-top: -2.1em;
-  font-weight: 700;
-  position: relative;
-  font-size: 3em;
-  color: #F2F5F5; }
-
-.site-name a {
-  text-decoration: none; }
-  .site-name a:hover {
-    color: #D6D9D9; }
-
-@media (max-width: 400px) {
-  .site-name {
-    margin-top: -15em; } }
+.site-name {
+  margin-top: -15em; }
+  .site-name span {
+    z-index: 3;
+    font-family: "Camby", sans-serif;
+    margin-top: -2.1em;
+    font-weight: 700;
+    position: relative;
+    font-size: 3em;
+    color: #F2F5F5; }
+  .site-name a {
+    text-decoration: none; }
+    .site-name a:hover {
+      color: #D6D9D9; }
+  @media (max-width: 400px) {
+    .site-name {
+      margin-top: -15em; } }
 
 .site-slogan {
   z-index: 3;
@@ -292,7 +293,7 @@ h1, h2, h3, h4 {
 
 body {
   background-color: #fff;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden; }
 
 table, th, tr, td {
@@ -347,7 +348,8 @@ button:focus {
   background-attachment: fixed; }
   @media (max-width: 400px) {
     .skewed-bg {
-      margin-top: -700px; } }
+      margin-top: -700px;
+      margin-right: -170px; } }
 
 .projects {
   margin-top: 10rem;
