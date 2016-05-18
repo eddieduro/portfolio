@@ -11,7 +11,8 @@
           justify-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-attachment: fixed; }
   @media (min-width: 400px) {
     .l-header {
       height: 850px; } }
@@ -44,6 +45,7 @@
   display: block !important; }
 
 video {
+  background-attachment: fixed;
   object-fit: cover; }
   @media (min-width: 400px) {
     video {
@@ -160,7 +162,7 @@ video {
           animation: bounce 2s infinite; }
   @media (min-width: 400px) {
     .top-arrow {
-      top: 65vh;
+      top: 75vh;
       margin-left: -0.5em; } }
 
 #block-system-main-menu {
@@ -338,7 +340,8 @@ button:focus {
   margin-left: -100px;
   margin-right: -100px;
   left: 0;
-  right: 0; }
+  right: 0;
+  background-attachment: fixed; }
   @media (max-width: 400px) {
     .skewed-bg {
       margin-top: -700px; } }
@@ -362,6 +365,10 @@ button:focus {
   left: 0;
   right: 0;
   overflow: hidden; }
+
+@media (max-width: 400px) {
+  .about-me {
+    padding-top: 7em; } }
 
 .about-section {
   -webkit-transform: skew(0deg, -10deg);
@@ -413,7 +420,13 @@ button:focus {
 
 .about-header {
   color: #F2F5F5;
-  padding: 0 5em; }
+  padding: 0 5em;
+  margin-left: 70vh; }
+  @media (min-width: 1100px) and (max-width: 1499px) {
+    .about-header {
+      padding-top: 20em;
+      margin-right: 10em;
+      margin-left: -1em; } }
   @media (max-width: 400px) {
     .about-header {
       margin-left: -5.7em;
@@ -423,7 +436,15 @@ button:focus {
   margin-top: 5rem;
   position: absolute;
   color: #F2F5F5;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  margin-left: 70vh; }
+  @media (min-width: 1100px) and (max-width: 1499px) {
+    .about-body {
+      margin-right: 10em;
+      margin-left: -1em; } }
+  @media (min-width: 1500px) {
+    .about-body {
+      padding-right: 20em; } }
   @media (max-width: 400px) {
     .about-body {
       margin-left: -2em;
@@ -442,10 +463,13 @@ button:focus {
   left: 50%;
   top: 0;
   position: absolute; }
+  @media (min-width: 1100px) and (max-width: 1499px) {
+    .views-field-field-profile-picture img {
+      left: 70%; } }
   @media (max-width: 400px) {
     .views-field-field-profile-picture img {
       padding-top: 1em;
-      margin-left: -5em;
+      margin-left: -15em;
       left: none; } }
 
 .social-media {

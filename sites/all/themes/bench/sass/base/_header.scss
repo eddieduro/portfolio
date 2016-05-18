@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-attachment: fixed;
 	@media(min-width: 400px){
 		height: 850px;
 	}
@@ -38,6 +39,7 @@
     display: block !important;
 }
 video {
+	background-attachment: fixed;
 	object-fit: cover;
 	@media(min-width: 400px){
 		width: 100%;

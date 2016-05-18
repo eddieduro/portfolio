@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 }
 @media (min-width: 400px) {
   /* line 1, ../sass/base/_header.scss */
@@ -21,14 +22,14 @@
   }
 }
 
-/* line 14, ../sass/base/_header.scss */
+/* line 15, ../sass/base/_header.scss */
 .video-container {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-/* line 19, ../sass/base/_header.scss */
+/* line 20, ../sass/base/_header.scss */
 .video-container #heroVideo {
   position: absolute;
   margin-top: -2.1em;
@@ -40,37 +41,38 @@
   z-index: 3;
 }
 @media (min-width: 400px) {
-  /* line 19, ../sass/base/_header.scss */
+  /* line 20, ../sass/base/_header.scss */
   .video-container #heroVideo {
     margin-top: -15em;
   }
 }
 
-/* line 32, ../sass/base/_header.scss */
+/* line 33, ../sass/base/_header.scss */
 .no-video .video-container video,
 .touch .video-container video {
   display: none;
 }
 
-/* line 36, ../sass/base/_header.scss */
+/* line 37, ../sass/base/_header.scss */
 .no-video .video-container .poster,
 .touch .video-container .poster {
   display: block !important;
 }
 
-/* line 40, ../sass/base/_header.scss */
+/* line 41, ../sass/base/_header.scss */
 video {
+  background-attachment: fixed;
   object-fit: cover;
 }
 @media (min-width: 400px) {
-  /* line 40, ../sass/base/_header.scss */
+  /* line 41, ../sass/base/_header.scss */
   video {
     width: 100%;
     height: 50%;
   }
 }
 
-/* line 48, ../sass/base/_header.scss */
+/* line 50, ../sass/base/_header.scss */
 .site-name span {
   z-index: 3;
   font-family: "Camby", sans-serif;
@@ -80,22 +82,22 @@ video {
   font-size: 3em;
   color: #F2F5F5;
 }
-/* line 57, ../sass/base/_header.scss */
+/* line 59, ../sass/base/_header.scss */
 .site-name a {
   text-decoration: none;
 }
-/* line 59, ../sass/base/_header.scss */
+/* line 61, ../sass/base/_header.scss */
 .site-name a:hover {
   color: #D6D9D9;
 }
 @media (min-width: 400px) {
-  /* line 47, ../sass/base/_header.scss */
+  /* line 49, ../sass/base/_header.scss */
   .site-name {
     margin-top: -15em;
   }
 }
 
-/* line 68, ../sass/base/_header.scss */
+/* line 70, ../sass/base/_header.scss */
 .site-slogan {
   z-index: 3;
   font-family: "Camby", sans-serif;
@@ -104,7 +106,7 @@ video {
   color: #F2F5F5;
   text-align: center;
 }
-/* line 75, ../sass/base/_header.scss */
+/* line 77, ../sass/base/_header.scss */
 .site-slogan:hover {
   cursor: inherit;
 }
@@ -207,7 +209,7 @@ video {
 @media (min-width: 400px) {
   /* line 72, ../sass/base/_navigation.scss */
   .top-arrow {
-    top: 65vh;
+    top: 75vh;
     margin-left: -0.5em;
   }
 }
@@ -446,6 +448,7 @@ button:focus {
   margin-right: -100px;
   left: 0;
   right: 0;
+  background-attachment: fixed;
 }
 @media (max-width: 400px) {
   /* line 33, ../sass/sections/_projects.scss */
@@ -454,7 +457,7 @@ button:focus {
   }
 }
 
-/* line 51, ../sass/sections/_projects.scss */
+/* line 52, ../sass/sections/_projects.scss */
 .projects {
   margin-top: 10rem;
   transform: skew(0deg, 10deg);
@@ -477,7 +480,14 @@ button:focus {
   overflow: hidden;
 }
 
-/* line 17, ../sass/sections/_about.scss */
+@media (max-width: 400px) {
+  /* line 16, ../sass/sections/_about.scss */
+  .about-me {
+    padding-top: 7em;
+  }
+}
+
+/* line 21, ../sass/sections/_about.scss */
 .about-section {
   transform: skew(0deg, -10deg);
   font-size: 2.7em;
@@ -488,7 +498,7 @@ button:focus {
   position: relative;
   z-index: 1;
 }
-/* line 26, ../sass/sections/_about.scss */
+/* line 30, ../sass/sections/_about.scss */
 .about-section:after, .about-section:before {
   background-color: #00B285;
   content: "";
@@ -498,18 +508,18 @@ button:focus {
   vertical-align: middle;
   width: 2em;
 }
-/* line 36, ../sass/sections/_about.scss */
+/* line 40, ../sass/sections/_about.scss */
 .about-section:after {
   left: 0.5em;
   margin-right: -50%;
 }
-/* line 40, ../sass/sections/_about.scss */
+/* line 44, ../sass/sections/_about.scss */
 .about-section:before {
   right: 0.5em;
   margin-left: -50%;
 }
 
-/* line 46, ../sass/sections/_about.scss */
+/* line 50, ../sass/sections/_about.scss */
 .about {
   transform: skew(0deg, -10deg);
   display: flex;
@@ -518,53 +528,76 @@ button:focus {
   flex-flow: row wrap;
 }
 @media (max-width: 400px) {
-  /* line 46, ../sass/sections/_about.scss */
+  /* line 50, ../sass/sections/_about.scss */
   .about {
     padding-top: 15em;
   }
 }
-/* line 55, ../sass/sections/_about.scss */
+/* line 59, ../sass/sections/_about.scss */
 .about h3 {
   margin-left: 2.1em;
   font-size: 2em;
   color: #00B285;
 }
 
-/* line 61, ../sass/sections/_about.scss */
+/* line 65, ../sass/sections/_about.scss */
 .about-header {
   color: #F2F5F5;
   padding: 0 5em;
+  margin-left: 70vh;
+}
+@media (min-width: 1100px) and (max-width: 1499px) {
+  /* line 65, ../sass/sections/_about.scss */
+  .about-header {
+    padding-top: 20em;
+    margin-right: 10em;
+    margin-left: -1em;
+  }
 }
 @media (max-width: 400px) {
-  /* line 61, ../sass/sections/_about.scss */
+  /* line 65, ../sass/sections/_about.scss */
   .about-header {
     margin-left: -5.7em;
     left: 2em;
   }
 }
 
-/* line 69, ../sass/sections/_about.scss */
+/* line 79, ../sass/sections/_about.scss */
 .about-body {
   margin-top: 5rem;
   position: absolute;
   color: #F2F5F5;
   margin-top: 1rem;
+  margin-left: 70vh;
+}
+@media (min-width: 1100px) and (max-width: 1499px) {
+  /* line 79, ../sass/sections/_about.scss */
+  .about-body {
+    margin-right: 10em;
+    margin-left: -1em;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 79, ../sass/sections/_about.scss */
+  .about-body {
+    padding-right: 20em;
+  }
 }
 @media (max-width: 400px) {
-  /* line 69, ../sass/sections/_about.scss */
+  /* line 79, ../sass/sections/_about.scss */
   .about-body {
     margin-left: -2em;
     left: 2em;
   }
 }
-/* line 78, ../sass/sections/_about.scss */
+/* line 96, ../sass/sections/_about.scss */
 .about-body p {
   font-size: 1.1em;
   margin-top: 1rem;
   padding: 0 8.5em;
 }
 
-/* line 85, ../sass/sections/_about.scss */
+/* line 103, ../sass/sections/_about.scss */
 .views-field-field-profile-picture img {
   width: auto;
   height: 300px;
@@ -575,11 +608,17 @@ button:focus {
   top: 0;
   position: absolute;
 }
+@media (min-width: 1100px) and (max-width: 1499px) {
+  /* line 103, ../sass/sections/_about.scss */
+  .views-field-field-profile-picture img {
+    left: 70%;
+  }
+}
 @media (max-width: 400px) {
-  /* line 85, ../sass/sections/_about.scss */
+  /* line 103, ../sass/sections/_about.scss */
   .views-field-field-profile-picture img {
     padding-top: 1em;
-    margin-left: -5em;
+    margin-left: -15em;
     left: none;
   }
 }
