@@ -9,7 +9,7 @@
   align-items: center;
   background-attachment: fixed;
 }
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   /* line 1, ../sass/base/_header.scss */
   .l-header {
     height: 850px;
@@ -40,10 +40,10 @@
   transform: translate(-50%, -50%);
   z-index: 3;
 }
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   /* line 20, ../sass/base/_header.scss */
   .video-container #heroVideo {
-    margin-top: -15em;
+    margin-top: -13em;
   }
 }
 
@@ -64,15 +64,14 @@ video {
   background-attachment: fixed;
   object-fit: cover;
 }
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   /* line 41, ../sass/base/_header.scss */
   video {
-    width: 100%;
-    height: 50%;
+    height: 400px;
   }
 }
 
-/* line 50, ../sass/base/_header.scss */
+/* line 49, ../sass/base/_header.scss */
 .site-name span {
   z-index: 3;
   font-family: "Camby", sans-serif;
@@ -82,22 +81,22 @@ video {
   font-size: 3em;
   color: #F2F5F5;
 }
-/* line 59, ../sass/base/_header.scss */
+/* line 58, ../sass/base/_header.scss */
 .site-name a {
   text-decoration: none;
 }
-/* line 61, ../sass/base/_header.scss */
+/* line 60, ../sass/base/_header.scss */
 .site-name a:hover {
   color: #D6D9D9;
 }
-@media (min-width: 400px) {
-  /* line 49, ../sass/base/_header.scss */
+@media (max-width: 400px) {
+  /* line 48, ../sass/base/_header.scss */
   .site-name {
     margin-top: -15em;
   }
 }
 
-/* line 70, ../sass/base/_header.scss */
+/* line 69, ../sass/base/_header.scss */
 .site-slogan {
   z-index: 3;
   font-family: "Camby", sans-serif;
@@ -106,7 +105,7 @@ video {
   color: #F2F5F5;
   text-align: center;
 }
-/* line 77, ../sass/base/_header.scss */
+/* line 76, ../sass/base/_header.scss */
 .site-slogan:hover {
   cursor: inherit;
 }
@@ -168,7 +167,7 @@ video {
 @media (max-width: 400px) {
   /* line 42, ../sass/base/_navigation.scss */
   .home-arrow {
-    margin-top: 40vh;
+    margin-top: 60vh;
     margin-left: -0.5em;
   }
 }
@@ -182,7 +181,7 @@ video {
 .about-arrow:hover {
   color: #FF8C69;
 }
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   /* line 55, ../sass/base/_navigation.scss */
   .about-arrow {
     margin-left: -0.5em;
@@ -203,7 +202,7 @@ video {
 /* line 75, ../sass/base/_navigation.scss */
 .top-arrow {
   position: absolute;
-  top: 20vh;
+  top: 50vh;
   right: 49%;
   color: #F2F5F5;
   font-size: 4em;
@@ -214,10 +213,10 @@ video {
 .top-arrow:hover {
   color: #FF8C69;
 }
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   /* line 75, ../sass/base/_navigation.scss */
   .top-arrow {
-    top: 75vh;
+    top: 120vh;
     margin-left: -0.5em;
   }
 }
@@ -470,6 +469,12 @@ button:focus {
   margin-top: 10rem;
   transform: skew(0deg, 10deg);
 }
+@media (max-width: 400px) {
+  /* line 52, ../sass/sections/_projects.scss */
+  .projects {
+    margin-left: -1em;
+  }
+}
 
 /* line 1, ../sass/sections/_about.scss */
 #block-views-about-me-block {
@@ -639,22 +644,28 @@ button:focus {
   position: relative;
   top: 20vh;
 }
-/* line 7, ../sass/sections/_socialmedia.scss */
+@media (max-width: 400px) {
+  /* line 1, ../sass/sections/_socialmedia.scss */
+  .social-media {
+    top: 40vh;
+  }
+}
+/* line 10, ../sass/sections/_socialmedia.scss */
 .social-media a {
   padding-left: 3em;
   padding-top: 3em;
 }
-/* line 10, ../sass/sections/_socialmedia.scss */
+/* line 13, ../sass/sections/_socialmedia.scss */
 .social-media a i {
   font-size: 4em;
   color: #222;
 }
-/* line 13, ../sass/sections/_socialmedia.scss */
+/* line 16, ../sass/sections/_socialmedia.scss */
 .social-media a i:hover {
   color: #00B285;
 }
 
-/* line 20, ../sass/sections/_socialmedia.scss */
+/* line 23, ../sass/sections/_socialmedia.scss */
 .social-media-icon {
   color: #222;
   display: block;
@@ -663,7 +674,7 @@ button:focus {
   z-index: 3;
 }
 
-/* line 28, ../sass/sections/_socialmedia.scss */
+/* line 32, ../sass/sections/_socialmedia.scss */
 .social-section {
   font-size: 2.7em;
   color: #00B285;
@@ -673,7 +684,7 @@ button:focus {
   margin-bottom: -5em;
   z-index: 3;
 }
-/* line 36, ../sass/sections/_socialmedia.scss */
+/* line 40, ../sass/sections/_socialmedia.scss */
 .social-section:after, .social-section:before {
   background-color: #222;
   content: "";
@@ -683,12 +694,12 @@ button:focus {
   vertical-align: middle;
   width: 2em;
 }
-/* line 46, ../sass/sections/_socialmedia.scss */
+/* line 50, ../sass/sections/_socialmedia.scss */
 .social-section:after {
   left: 0.5em;
   margin-right: -50%;
 }
-/* line 50, ../sass/sections/_socialmedia.scss */
+/* line 54, ../sass/sections/_socialmedia.scss */
 .social-section:before {
   right: 0.5em;
   margin-left: -50%;

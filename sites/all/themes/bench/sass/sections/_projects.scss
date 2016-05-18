@@ -52,4 +52,7 @@
 .projects {
   margin-top: 10rem;
   transform: skew(0deg, 10deg);
+  @media(max-width: 400px){
+    margin-left: -1em;
+  }
 }

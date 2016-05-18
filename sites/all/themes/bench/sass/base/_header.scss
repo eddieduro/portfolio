@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	background-attachment: fixed;
-	@media(min-width: 400px){
+	@media(max-width: 400px){
 		height: 850px;
 	}
 	@media(min-height: 900px){
@@ -26,8 +26,8 @@
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   z-index: 3;
-	@media(min-width: 400px){
-		margin-top: -15em;
+	@media(max-width: 400px){
+		margin-top: -13em;
 	}
 }
 .no-video .video-container video,
@@ -41,9 +41,8 @@
 video {
 	background-attachment: fixed;
 	object-fit: cover;
-	@media(min-width: 400px){
-		width: 100%;
-		height: 50%;
+	@media(max-width: 400px){
+		height: 400px;
 	}
 }
 .site-name {
@@ -62,7 +61,7 @@ video {
 			color: $header_hover;
 		}
 	}
-	@media(min-width: 400px){
+	@media(max-width: 400px){
 		margin-top: -15em;
 	}
 }

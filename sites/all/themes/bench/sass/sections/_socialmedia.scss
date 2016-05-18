@@ -4,6 +4,9 @@
   justify-content: center;
   position: relative;
   top: 20vh;
+	@media(max-width: 400px){
+		top: 40vh;
+	}
   a{
   	padding-left: 3em;
     padding-top: 3em;
@@ -23,6 +26,7 @@
 	font-size: 2em;
 	left: 50%;
 	z-index: 3;
+
 }
 
 .social-section{
