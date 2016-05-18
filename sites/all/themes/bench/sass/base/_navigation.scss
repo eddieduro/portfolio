@@ -18,12 +18,12 @@
   right: 0;
   z-index: 10;
 	.hamburger-inner{
-		background-color: #fff;
+		background-color: #FF8C69;
 		&:before {
-			background-color: #fff;
+			background-color: #FF8C69;
 		}
 		&:after {
-			background-color: #fff;
+			background-color: #FF8C69;
 		}
 	}
 }
@@ -44,7 +44,7 @@
   top: 0;
   margin-top: 40%;
   &:hover {
-  	color: $main-color;
+  	color: #FF8C69;
   }
 	@media(max-width: 400px){
 		margin-top: 40vh;
@@ -56,7 +56,7 @@
 	position: relative;
 	top: 20vh;
 	&:hover {
-  	color: #222;
+  	color: #FF8C69;
   }
 	@media(min-width: 400px){
 		margin-left: -0.5em;
@@ -67,6 +67,9 @@
 	position: relative;
 	top: 20vh;
 	margin-left: -3.0em;
+	&:hover{
+		color: #FF8C69;
+	}
 }
 
 .top-arrow{
@@ -77,6 +80,9 @@
 	font-size: 4em;
   bottom: 0;
   animation: bounce 2s infinite;
+	&:hover {
+		color: #FF8C69;
+	}
 	@media(min-width: 400px){
 		top: 75vh;
 		margin-left: -0.5em;
@@ -85,7 +91,7 @@
 #block-system-main-menu{
     opacity: 0;
 	.content {
-		background-color: black;
+		background-color: rgba(0,0,0,0.7);
 		z-index: 10;
     height: 100vh;
     width: 100%;

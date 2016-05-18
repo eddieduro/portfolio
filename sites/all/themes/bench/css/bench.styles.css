@@ -109,11 +109,11 @@ video {
   right: 0;
   z-index: 10; }
   .hamburger .hamburger-inner {
-    background-color: #fff; }
+    background-color: #FF8C69; }
     .hamburger .hamburger-inner:before {
-      background-color: #fff; }
+      background-color: #FF8C69; }
     .hamburger .hamburger-inner:after {
-      background-color: #fff; }
+      background-color: #FF8C69; }
 
 .fa-chevron-down {
   color: #F2F5F5;
@@ -131,7 +131,7 @@ video {
   top: 0;
   margin-top: 40%; }
   .home-arrow:hover {
-    color: #00B285; }
+    color: #FF8C69; }
   @media (max-width: 400px) {
     .home-arrow {
       margin-top: 40vh;
@@ -141,7 +141,7 @@ video {
   position: relative;
   top: 20vh; }
   .about-arrow:hover {
-    color: #222; }
+    color: #FF8C69; }
   @media (min-width: 400px) {
     .about-arrow {
       margin-left: -0.5em; } }
@@ -150,6 +150,8 @@ video {
   position: relative;
   top: 20vh;
   margin-left: -3.0em; }
+  .social-arrow:hover {
+    color: #FF8C69; }
 
 .top-arrow {
   position: absolute;
@@ -160,6 +162,8 @@ video {
   bottom: 0;
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite; }
+  .top-arrow:hover {
+    color: #FF8C69; }
   @media (min-width: 400px) {
     .top-arrow {
       top: 75vh;
@@ -168,7 +172,7 @@ video {
 #block-system-main-menu {
   opacity: 0; }
   #block-system-main-menu .content {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 10;
     height: 100vh;
     width: 100%;

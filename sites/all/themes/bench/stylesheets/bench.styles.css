@@ -132,15 +132,15 @@ video {
 }
 /* line 20, ../sass/base/_navigation.scss */
 .hamburger .hamburger-inner {
-  background-color: #fff;
+  background-color: #FF8C69;
 }
 /* line 22, ../sass/base/_navigation.scss */
 .hamburger .hamburger-inner:before {
-  background-color: #fff;
+  background-color: #FF8C69;
 }
 /* line 25, ../sass/base/_navigation.scss */
 .hamburger .hamburger-inner:after {
-  background-color: #fff;
+  background-color: #FF8C69;
 }
 
 /* line 31, ../sass/base/_navigation.scss */
@@ -163,7 +163,7 @@ video {
 }
 /* line 46, ../sass/base/_navigation.scss */
 .home-arrow:hover {
-  color: #00B285;
+  color: #FF8C69;
 }
 @media (max-width: 400px) {
   /* line 42, ../sass/base/_navigation.scss */
@@ -180,7 +180,7 @@ video {
 }
 /* line 58, ../sass/base/_navigation.scss */
 .about-arrow:hover {
-  color: #222;
+  color: #FF8C69;
 }
 @media (min-width: 400px) {
   /* line 55, ../sass/base/_navigation.scss */
@@ -195,8 +195,12 @@ video {
   top: 20vh;
   margin-left: -3.0em;
 }
+/* line 70, ../sass/base/_navigation.scss */
+.social-arrow:hover {
+  color: #FF8C69;
+}
 
-/* line 72, ../sass/base/_navigation.scss */
+/* line 75, ../sass/base/_navigation.scss */
 .top-arrow {
   position: absolute;
   top: 20vh;
@@ -206,21 +210,25 @@ video {
   bottom: 0;
   animation: bounce 2s infinite;
 }
+/* line 83, ../sass/base/_navigation.scss */
+.top-arrow:hover {
+  color: #FF8C69;
+}
 @media (min-width: 400px) {
-  /* line 72, ../sass/base/_navigation.scss */
+  /* line 75, ../sass/base/_navigation.scss */
   .top-arrow {
     top: 75vh;
     margin-left: -0.5em;
   }
 }
 
-/* line 85, ../sass/base/_navigation.scss */
+/* line 91, ../sass/base/_navigation.scss */
 #block-system-main-menu {
   opacity: 0;
 }
-/* line 87, ../sass/base/_navigation.scss */
+/* line 93, ../sass/base/_navigation.scss */
 #block-system-main-menu .content {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 10;
   height: 100vh;
   width: 100%;
@@ -231,22 +239,22 @@ video {
   align-items: center;
   justify-content: center;
 }
-/* line 100, ../sass/base/_navigation.scss */
+/* line 106, ../sass/base/_navigation.scss */
 #block-system-main-menu ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 105, ../sass/base/_navigation.scss */
+/* line 111, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu {
   border: none;
   list-style: none;
   text-align: left;
 }
-/* line 110, ../sass/base/_navigation.scss */
+/* line 116, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li {
   padding: 1rem;
 }
-/* line 112, ../sass/base/_navigation.scss */
+/* line 118, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a {
   position: relative;
   font-family: "Camby", sans-serif;
@@ -255,7 +263,7 @@ video {
   color: #fff;
   font-size: 2.0em;
 }
-/* line 119, ../sass/base/_navigation.scss */
+/* line 125, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:before {
   content: "";
   position: absolute;
@@ -271,7 +279,7 @@ video {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 134, ../sass/base/_navigation.scss */
+/* line 140, ../sass/base/_navigation.scss */
 #block-system-main-menu ul.menu li a:hover:before {
   visibility: visible;
   opacity: 0.9;
