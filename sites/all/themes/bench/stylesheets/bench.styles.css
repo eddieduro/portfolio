@@ -124,7 +124,7 @@ video {
 }
 /* line 14, ../sass/base/_navigation.scss */
 .hamburger {
-  position: absolute;
+  position: fixed;
   display: block;
   top: 2rem;
   right: 0;
