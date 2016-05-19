@@ -1,5 +1,5 @@
 (function($) {
-  $(function() {
+  $(document).ready(function() {
   var $smoothScroll = $('.smoothScroll'),
       $hamburger    = $(".hamburger"),
       $menu         = $("#block-system-main-menu"),
@@ -19,11 +19,11 @@
     });
   $('a').click(function(event) {
     TweenMax.set($menu, {autoAlpha: 0});
-    $hamburger.toggleClass("is-active");
     
     event.preventDefault();
 
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    $hamburger.toggleClass("is-active");
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
