@@ -41,13 +41,14 @@
 video {
 	background-attachment: fixed;
 	object-fit: cover;
+	height: 1000px;
 	@media(max-width: 400px){
 		height: 400px;
 		max-width: 100%;
 	}
 }
 .site-name {
-	margin-top: -15em;
+	margin-top: -10em;
 	span{
 		z-index: 3;
 		font-family: $main_font;

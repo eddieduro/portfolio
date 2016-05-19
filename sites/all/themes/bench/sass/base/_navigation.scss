@@ -42,13 +42,16 @@
 .home-arrow {
 	position: absolute;
   top: 0;
-  margin-top: 40%;
+  margin-top: 30%;
   &:hover {
   	color: #FF8C69;
   }
 	@media(max-width: 400px){
 		margin-top: 60vh;
 		margin-left: -0.5em;
+	}
+	@media(min-width: 700px) and (max-width: 1300px){
+		margin-top: 80vh;
 	}
 }
 
@@ -70,6 +73,9 @@
 	&:hover{
 		color: #FF8C69;
 	}
+	@media(min-width: 700px) and (max-width: 1300px){
+		margin-top: 25vh;
+	}
 }
 
 .top-arrow{
@@ -86,6 +92,9 @@
 	@media(max-width: 400px){
 		top: 120vh;
 		margin-left: -0.5em;
+	}
+	@media(min-width: 700px) and (max-width: 1300px){
+		margin-top: 40vh;
 	}
 }
 #block-system-main-menu{

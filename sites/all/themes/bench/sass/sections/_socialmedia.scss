@@ -7,6 +7,9 @@
 	@media(max-width: 400px){
 		top: 40vh;
 	}
+  @media(min-width: 700px) and (max-width: 1300px){
+    top: 40vh;
+  }
   a{
   	padding-left: 3em;
     padding-top: 3em;
