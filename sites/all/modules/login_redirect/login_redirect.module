@@ -1,0 +1,5 @@
+<?php
+
+function login_redirect_user_login(){
+    $_GET['destination'] = '<front>';
+}
