@@ -73,6 +73,7 @@
 <div class="l-page">
   <header class="l-header" role="banner" id="top">
     <div class="homepage-hero-module">
+    <?php if ($is_front): ?>
       <div class="video-container">
         <div class="filter"></div>
         <video autoplay loop class="fillWidth" id="heroVideo" width="100%" height="auto">
@@ -81,6 +82,7 @@
         </video>
           <a class="smoothScroll" href="#work"><i class="fa fa-chevron-down home-arrow" aria-hidden="true"></i></a>
       </div>
+    
       <div class="l-branding">
         <?php if ($logo): ?>
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -101,7 +103,7 @@
         <?php print render($page['branding']); ?>
       </div>
     </div>
-
+    <?php endif; ?>
     <?php print render($page['header']); ?>
     <div class="navigation">
       <nav>
@@ -113,13 +115,12 @@
   <div class="l-main">
     <div class="l-content" role="main">
     <?php if ($is_front): ?>
-
+      <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     <?php endif; ?>
-    <button class="hamburger hamburger--collapse" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
     <div class="container">
         <?php print render($page['highlighted']); ?>
         <?php print $breadcrumb; ?>
