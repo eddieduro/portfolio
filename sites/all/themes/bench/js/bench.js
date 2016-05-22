@@ -17,7 +17,7 @@
       }
     }
     });
-  $('a').click(function(event) {
+  $menu.find('a').click(function(event) {
     TweenMax.set($menu, {autoAlpha: 0});
     
     event.preventDefault();
